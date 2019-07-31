@@ -1,6 +1,6 @@
 <?php	
 if(!defined('environment')) {
-    define('environment','DEV'); // 
+    define('environment','PROD'); // 
 }
 if(!defined('devURL')) {
     define('devURL','http://localhost:8080/premios-exatec/'); // 
