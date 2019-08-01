@@ -12,7 +12,7 @@
         padding-bottom: 10px;
     }
     .logo {
-        @include background-image(center, contain);
+        @include background-image(center, cover);
         background-image: url(../img/LOGO_PREMIOS_EXATEC.png);
         width: 100%;
         height: 70px;
@@ -187,7 +187,7 @@
         .logo {
             top: 25px;
             height: 200%;
-            @include background-image(74px -6px, contain);
+            @include background-image(center, 180px);
         }
         .btn-none-movil {
             display: none;

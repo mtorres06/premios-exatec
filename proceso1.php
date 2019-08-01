@@ -31,7 +31,7 @@
             <ul class="custom-list step-list">
                 <li v-bind:class="{ selected: showStep1 }">1. Datos de contacto</li>
                 <li v-bind:class="{ selected: showStep2 }">2. Datos del nominado</span></li>
-                <li v-bind:class="{ selected: showStep3 }">3. Resumen</span></li>
+                <li v-bind:class="{ selected: showStep3 }">3. Semblanza</span></li>
             </ul>
         </div>
         <form class="form-custom form-process" enctype="multipart/form-data" id="formulario" v-on:submit="enviar()" method="post" action="gracias.php">
@@ -184,10 +184,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <hr class="separator">
+                        <div class="row attachment"> 
+                            <div>
+                                <p class="title-section-checkbox field-description">Evidencia de logros del nominado                             
+                                    <span class="title-italic">
+                                Como máximo se podrán adjuntar dos cartas en formato PDF no mayor a 2 cuartillas, que incluyan evidencia de logros profesionales; afiliaciones comunitarias / profesionales; premios, honores o condecoraciones; publicaciones; servicio y/o apoyo al TEC u otras organizaciones, entre otros.
+                                    </span>
+                                </p>
+                            </div>
+                           
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                           
+
                                 <div class="wrapper-input wrapper-file">
-                                    <p class="input-label">Completa y sube el formato de portafolio de evidencias</p>
+                                   
                                     <a class="form-link" href="#">
                                         Descargar formato portafolio de evidencias.xml
                                         <span class="fig-download"></span>
@@ -236,7 +247,7 @@
                                                 class="form-input--file-button button-general button-primary button-input-file">Cargar
                                                 archivo</span>
                                             <input class="form-input-file" type="file" id="cv" name="cv"
-                                                accept="image/*" size="14" />
+                                                accept="application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/msword,application/pdf,image/*" size="14" />
                                         </label>
                                     </div>
                                 </div>

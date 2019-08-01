@@ -105,7 +105,7 @@
                         Gracias, tu nominación ha sido enviada.    
                     </p>
                     <p class="heading heading-02 main-txt">
-                        Recuerda que es posible que te busquemos para verificar la información.
+                      Es posible que nos pongamos en contacto contigo para verificar la información.
                     </p>
                 </div>
             </div>
