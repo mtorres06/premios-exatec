@@ -119,7 +119,7 @@
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                                 <div class="wrapper-input wrapper-checkbox">
                                     <div class="checkbox-custom">
-                                        <input type="radio" value="1" id="checkbox-postumo-si" name="checkbox-postumo"
+                                        <input type="checkbox" value="1" id="checkbox-postumo-si" name="checkbox-postumo"
                                             class="input-checkbox" />
                                         <label for="checkbox-postumo-si" class="label-checkbox"></label>
                                     </div>
@@ -129,7 +129,7 @@
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                                 <div class="wrapper-input wrapper-checkbox">
                                     <div class="checkbox-custom">
-                                        <input type="radio" value="1" id="checkbox-postumo-no" name="checkbox-postumo"
+                                        <input type="checkbox" value="1" id="checkbox-postumo-no" name="checkbox-postumo"
                                             class="input-checkbox" />
                                         <label for="checkbox-postumo-no" class="label-checkbox"></label>
                                     </div>
@@ -256,7 +256,12 @@
                         <div class="row">
                             <div class="col-xl-6 col-lg-6">
                                 <div class="wrapper-input">
-                                    <label class="input-label" for="ejemplos">Escribe ejemplos personales</label>
+                                    <label class="input-label" for="ejemplos">Razón de nominar</label>
+                                    <p class="field-description">Describe y/o justifica las razones por las cuales propones al Premio al Mérito EXATEC al egresado postulado y que lo hacen merecedor de este reconocimiento. 
+Tip. Comparte ejemplos personales, esta es una manera memorable de 
+hacer que tu candidato se destaque.
+Máximo 3000 caracteres</span></p>
+
                                     <input type="text" class="input-custom" name="ejemplos" placeholder="Escribir">
                                 </div>
                             </div>

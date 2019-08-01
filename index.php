@@ -129,7 +129,7 @@
         <div class="campus-participants">
             <div class="container-main-title">
                 <h2 class="heading heading-01 main-title">
-                    Mérito EXATEC 2020: Escuelas / Regiones / Campus participantes
+                    Participantes Mérito EXATEC 2020
                     <hr class="separator small">
                 </h2>
             </div>

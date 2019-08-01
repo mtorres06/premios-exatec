@@ -203,7 +203,7 @@ a:hover {
         border-radius: 3px;
         &:hover {
             background-color: $clr-white;
-            color: $clr-blue;
+            color: $clr-blue !important;
         }
         &.button-form-process {
             margin-left: 20px;
@@ -318,10 +318,10 @@ a:hover {
     }
 }
 
-.attachment {
-    p.field-description {
-        line-height: 25px;
-    }
+
+p.field-description {
+    line-height: 25px;
+    font-size: 12px;
 }
 
 .personal-info-fields {

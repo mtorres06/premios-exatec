@@ -38,7 +38,7 @@
                         <p class="txt">Todos los nominados deberán ser egresados del Tecnológico de Monterrey.</p>
 
                         <p class="title1">¿Dónde puedo realizar la nominación?</p>
-                        <p class="txt">A través de la página de egresados.tec.mx /Premios EXATEC, a través del formato de nominación en línea.</p>
+                        <p class="txt">A través de la página de https://egresados.itesm.mx/vinculacion/PremiosEXATEC, a través del formato de nominación en línea.</p>
 
                         <p class="title1">¿Cuántas postulaciones puedo realizar?</p>
                         <p class="txt">No hay límite en el número de postulaciones a realizar, puedes nominar a todo EXATEC que cumpla con los criterios de nominación.</p>

@@ -67,7 +67,7 @@
                           </li> 
 
                           <li class="nav-item">
-                              <a class="nav-link" id="txt-menu" href="#link-nominarias">¿A quién nominar?</a>
+                              <a class="nav-link" id="txt-menu" href="aquiennominar.php">¿A quién nominar?</a>
                           </li> 
 
                           <li class="nav-item">

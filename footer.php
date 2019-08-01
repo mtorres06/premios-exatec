@@ -1,7 +1,7 @@
 <footer class="footer">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-12 col-lg-1 col-sm-1">
+			<div class="col-12 col-lg-1 col-sm-4">
 				<div class="logo"></div>
 			</div>
 			<div class="col-12 col-lg-3 col-sm-3">  
@@ -18,16 +18,16 @@
 			</div>
 			<div class="col-12 col-lg-5 col-sm-5">
 				<div class="social-media">
-					<a href="#">
+					<a href="https://www.facebook.com/exatec/" target="facebook">
 						<img class="icon-social" src="img/icon-fb.png" alt="">
 					</a>
-					<a href="#">
+					<a href="https://www.instagram.com/exatecoficial/"  target="instagram">
 						<img class="icon-social" src="img/unnamed(1).png" alt="">
 					</a>
-					<a href="#">							
+					<a href="https://twitter.com/exatec" target="twitter">							
 						<img class="icon-social" src="img/unnamed(2).png" alt="">
 					</a>
-					<a href="#">
+					<a href="https://www.youtube.com/user/EXATECvideo" target="youtube">
 						<img class="icon-social" src="img/unnamed(3).png" alt="">
 					</a>
 				</div>
