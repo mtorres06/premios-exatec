@@ -1,9 +1,54 @@
 <?php include('header.php'); ?>
 <?php
+
+    function generateRandomString($length = 10) {
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $charactersLength = strlen($characters);
+        $randomString = '';
+        for ($i = 0; $i < $length; $i++) {
+            $randomString .= $characters[rand(0, $charactersLength - 1)];
+        }
+        return $randomString;
+    }
+
     $formulario = $_POST;
     if(isset($formulario)){
         $conn = new mysqli(MYSQL_SERVER, MYSQL_USER, MYSQL_PASS, DB, MYSQL_PORT);
   
+        $evidencias = $_FILES['evidencias'];
+        $cv = $_FILES['cv'];
+
+        $evidencias_fichero_subido='';
+        $cv_fichero_subido='';
+
+        if(isset($evidencias) && isset($cv)) {
+
+            $evidenciasFileName = generateRandomString(20) . $evidencias['name'];
+            $cvFileName = generateRandomString(20) . $cv['name'];
+
+            
+            $dir_subida = getcwd() . '/uploads/';
+            
+            $evidencias_fichero_subido = $dir_subida . basename($evidenciasFileName);
+            $cv_fichero_subido = $dir_subida . basename($evidenciasFileName);
+
+            $evidencias_fichero_subido = str_replace('\\','/',$evidencias_fichero_subido);
+            $cv_fichero_subido = str_replace('\\','/',$cv_fichero_subido);
+
+            if (move_uploaded_file($_FILES['evidencias']['tmp_name'], $evidencias_fichero_subido)) {
+                // echo "El fichero es válido y se subió con éxito.\n";
+            } else {
+                // echo "¡Posible ataque de subida de ficheros!\n";
+            }
+            if (move_uploaded_file($_FILES['cv']['tmp_name'], $cv_fichero_subido)) {
+                // echo "El fichero es válido y se subió con éxito.\n";
+            } else {
+                // echo "¡Posible ataque de subida de ficheros!\n";
+            }
+
+        }
+
+
         if ($conn->connect_error) {
           die("ERROR: Unable to connect: " . $conn->connect_error);
         } 
@@ -23,8 +68,8 @@
         $sql = str_replace("<{nominado-nombre: }>", isset($formulario["nominado-nombre"]) ? "'" . $formulario["nominado-nombre"] ."'" : '', $sql);
         $sql = str_replace("<{nominado-telefono: }>", isset($formulario["nominado-telefono"]) ? "'" . $formulario["nominado-telefono"] ."'" : '', $sql);
         $sql = str_replace("<{nominado-email: }>", isset($formulario["nominado-telefono"]) ? "'" . $formulario["nominado-email"] ."'":'', $sql);
-        $sql = str_replace("<{evidencias: }>", isset($formulario["evidencias"]) ? "'" . $formulario["evidencias"] ."'":'', $sql);
-        $sql = str_replace("<{cv: }>",  isset($formulario["cv"]) ? "'" . $formulario["cv"] ."'":'', $sql);
+        $sql = str_replace("<{evidencias: }>", isset($evidencias_fichero_subido) ? "'" . $evidencias_fichero_subido ."'":'', $sql);
+        $sql = str_replace("<{cv: }>",  isset($cv_fichero_subido) ? "'" . $cv_fichero_subido ."'":'', $sql);
         $sql = str_replace("<{ejemplos: }>",  isset($formulario["ejemplos"]) ? "'" . $formulario["ejemplos"] ."'":'', $sql);
 
 
