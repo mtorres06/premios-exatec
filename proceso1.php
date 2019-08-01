@@ -34,7 +34,7 @@
                 <li v-bind:class="{ selected: showStep3 }">3. Semblanza</span></li>
             </ul>
         </div>
-        <form class="form-custom form-process" enctype="multipart/form-data" id="formulario" v-on:submit="enviar()" method="post" action="gracias.php">
+        <form class="form-custom form-process" enctype="multipart/form-data" id="formulario" method="post" action="gracias.php">
             <div class="container-fluid background-form">
                 <div class="row">
                     <div class="col-xl-8 col-lg-8 offset-xl-2 offset-lg-2 form-step" v-show="showStep1">
@@ -50,20 +50,24 @@
                         <div class="row">
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                                 <div class="wrapper-input wrapper-checkbox">
-                                    <div class="">
-                                        <label for="checkbox-persona-moral" class="label-checkbox">
-                                            <input type="radio" value="1" id="checkbox-persona-moral"
+                                    <div class="checkbox-custom">                                        
+                                            <input type="checkbox" id="checkbox-persona-moral"
+                                                v-model="formularioValues.personaMoral"
+                                                v-on:change="personaMoralChecks()"
                                                 name="checkbox-persona-moral" class="input-checkbox" />
-                                        </label>
+                                                <label for="checkbox-persona-moral" class="label-checkbox"></label>
+                                        
                                     </div>
                                     <p class="input-label">Persona moral</p>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                                 <div class="wrapper-input wrapper-checkbox">
-                                    <div class="">
-                                        <input type="radio" id="checkbox-persona-fisica" name="checkbox-persona-fisica"
-                                            class="input-checkbox" />
+                                    <div class="checkbox-custom">
+                                        <input type="checkbox" id="checkbox-persona-fisica" name="checkbox-persona-fisica"
+                                        v-model="formularioValues.personaFisica"  
+                                        v-on:change="personaFisicaChecks()"  
+                                        class="input-checkbox" />
                                         <label for="checkbox-persona-fisica" class="label-checkbox"></label>
                                     </div>
                                     <p class="input-label">Persona física</p>
@@ -75,7 +79,7 @@
                             <div class="col-xl-4 col-lg-4">
                                 <div class="wrapper-input">
                                     <label class="input-label" for="contacto-nombre">Nombre completo*</label>
-                                    <input type="text" class="input-custom" name="contacto-nombre" id="contacto-nombre">
+                                    <input type="text" v-model="formularioValues.contactoNombre" class="input-custom" name="contacto-nombre" id="contacto-nombre">
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4">
@@ -119,7 +123,9 @@
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                                 <div class="wrapper-input wrapper-checkbox">
                                     <div class="checkbox-custom">
-                                        <input type="checkbox" value="1" id="checkbox-postumo-si" name="checkbox-postumo"
+                                        <input type="checkbox" id="checkbox-postumo-si" name="checkbox-postumo"
+                                        v-model="formularioValues.nominacionPostumaSi"
+                                        v-on:change="nominacionPostumaSiChecks()"
                                             class="input-checkbox" />
                                         <label for="checkbox-postumo-si" class="label-checkbox"></label>
                                     </div>
@@ -130,7 +136,9 @@
                                 <div class="wrapper-input wrapper-checkbox">
                                     <div class="checkbox-custom">
                                         <input type="checkbox" value="1" id="checkbox-postumo-no" name="checkbox-postumo"
-                                            class="input-checkbox" />
+                                        v-model="formularioValues.nominacionPostumaNo"
+                                        v-on:change="nominacionPostumaNoChecks()"    
+                                        class="input-checkbox" />
                                         <label for="checkbox-postumo-no" class="label-checkbox"></label>
                                     </div>
                                     <p class="input-label">No</p>
@@ -146,7 +154,9 @@
                                 <div class="wrapper-input wrapper-checkbox">
                                     <div class="checkbox-custom">
                                         <input type="checkbox" value="1" id="checkbox-trayectoria-exatec"
-                                            name="checkbox-trayectoria-exatec" class="input-checkbox" />
+                                        v-model="formularioValues.trayectoria"
+                                        v-on:change="trayectoriaChecks()"    
+                                        name="checkbox-trayectoria-exatec" class="input-checkbox" />
                                         <label for="checkbox-trayectoria-exatec" class="label-checkbox"></label>
                                     </div>
                                     <p class="input-label">Trayectoria EXATEC</p>
@@ -156,7 +166,9 @@
                                 <div class="wrapper-input wrapper-checkbox">
                                     <div class="checkbox-custom">
                                         <input type="checkbox" value="1" id="checkbox-merito-exatec"
-                                            name="checkbox-merito-exatec" class="input-checkbox" />
+                                        v-model="formularioValues.merito"
+                                        v-on:change="meritoChecks()"     
+                                        name="checkbox-merito-exatec" class="input-checkbox" />
                                         <label for="checkbox-merito-exatec" class="label-checkbox"></label>
                                     </div>
                                     <p class="input-label">Mérito EXATEC</p>
@@ -167,7 +179,7 @@
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 custom-columns">
                                 <div class="wrapper-input">
                                     <label class="input-label" for="nominado-nombre">Nombre completo*</label>
-                                    <input type="text" class="input-custom" id="nominado-nombre" name="nominado-nombre">
+                                    <input type="text" v-model="formularioValues.nominadoNombre" class="input-custom" id="nominado-nombre" name="nominado-nombre">
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 custom-columns">
@@ -273,10 +285,10 @@ Máximo 3000 caracteres</span></p>
                                         <i class="fas fa-chevron-left button-icon"></i>
                                         Paso anterior
                                     </a>
-                                    <button type="submit" class="button-general button-primary button-form-process">
+                                    <a v-on:click="enviar()" class="button-general button-primary button-form-process">
                                         Siguiente paso
                                         <i class="fas fa-chevron-right button-icon"></i>
-                                    </button>
+</a>
                                 </div>
                             </div>
                         </div>
@@ -288,5 +300,6 @@ Máximo 3000 caracteres</span></p>
     </div>
 </div>
 <script src="procesoformvue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 <hr class="mt-5 mb-5">
 <?php include('footer.php'); ?>
