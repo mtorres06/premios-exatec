@@ -16,9 +16,9 @@
     <div class="container-fluid "> 
         <div class="row">
             <article class="col-12 col-lg-8 offset-lg-1 col-sm-8 offset-sm-1 block-txt">
-                <ul>
+            <hr class="mt-5 mb-5">
                      Próximamente podrás  ver en esta sección la lista de ganadores de EXATEC 2020
-                </ul>
+            <hr class="mt-5 mb-5">
             </article>
         </div>
 
