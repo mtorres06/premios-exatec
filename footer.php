@@ -12,7 +12,7 @@
 			</div>  
 			<div class="col-12 col-lg-3 col-sm-3">
 				<ul>
-					<li><a href="#link-nominarias">¿A quién nominar?</a></li>
+					<li><a href="aquiennominar.php">¿A quién nominar?</a></li>
 					<li><a href="#link-premios">Premios Exatec</a></li>
 				</ul>
 			</div>
