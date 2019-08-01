@@ -51,7 +51,7 @@
                                 <div class="wrapper-input wrapper-checkbox">
                                     <div class="">
                                         <label for="checkbox-persona-moral" class="label-checkbox">
-                                            <input type="radio" value="1" id="checkbox-persona-moral" name="persona" class="input-checkbox" />
+                                            <input type="radio" value="1" id="checkbox-persona-moral" id="persona" name="persona" class="input-checkbox" />
                                         </label>
                                     </div>
                                     <p class="input-label">Persona moral</p>
@@ -60,7 +60,7 @@
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                                 <div class="wrapper-input wrapper-checkbox">
                                     <div class="">
-                                        <input type="radio" id="checkbox-persona-fisica" name="persona" class="input-checkbox" />
+                                        <input type="radio" id="checkbox-persona-fisica" id="persona" name="persona" class="input-checkbox" />
                                         <label for="checkbox-persona-fisica" class="label-checkbox"></label>
                                     </div>
                                     <p class="input-label">Persona física</p>
@@ -77,14 +77,14 @@
                             </div>
                             <div class="col-xl-4 col-lg-4">
                                 <div class="wrapper-input">
-                                    <label class="input-label" for="name">Número de celular</label>
-                                    <input type="text" class="input-custom" name="name" placeholder="811 320 78 56">
+                                    <label class="input-label" for="telefono">Número de celular</label>
+                                    <input type="text" class="input-custom" name="telefono" placeholder="811 320 78 56">
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4">
                                 <div class="wrapper-input">
-                                    <label class="input-label" for="name">Email</label>
-                                    <input type="text" class="input-custom" name="name" placeholder="fernando.montemayor@gmail.com">
+                                    <label class="input-label" for="email">Email</label>
+                                    <input type="text" class="input-custom" name="email" placeholder="fernando.montemayor@gmail.com">
                                 </div>
                             </div>
                         </div>
@@ -112,7 +112,7 @@
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                                 <div class="wrapper-input wrapper-checkbox">
                                     <div class="checkbox-custom">
-                                        <input type="checkbox" value="1" id="checkbox-postumo-si" name="" class="input-checkbox" />
+                                        <input type="checkbox" value="1" id="checkbox-postumo-si" id="postuma" name="postuma" class="input-checkbox" />
                                         <label for="checkbox-postumo-si" class="label-checkbox"></label>
                                     </div>
                                     <p class="input-label">Sí</p>
@@ -121,7 +121,7 @@
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                                 <div class="wrapper-input wrapper-checkbox">
                                     <div class="checkbox-custom">
-                                        <input type="checkbox" value="1" id="checkbox-postumo-no" name="" class="input-checkbox" />
+                                        <input type="checkbox" value="1" id="checkbox-postumo-no" id="postuma" name="postuma" class="input-checkbox" />
                                         <label for="checkbox-postumo-no" class="label-checkbox"></label>
                                     </div>
                                     <p class="input-label">No</p>
@@ -136,7 +136,7 @@
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                                 <div class="wrapper-input wrapper-checkbox">
                                     <div class="checkbox-custom">
-                                        <input type="checkbox" value="1" id="checkbox-trayectoria-exatec" name="" class="input-checkbox" />
+                                        <input type="checkbox" value="1" id="checkbox-trayectoria-exatec" id="trayectoria" name="trayectoria" class="input-checkbox" />
                                         <label for="checkbox-trayectoria-exatec" class="label-checkbox"></label>
                                     </div>
                                     <p class="input-label">Trayectoria EXATEC</p>
@@ -145,7 +145,7 @@
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                                 <div class="wrapper-input wrapper-checkbox">
                                     <div class="checkbox-custom">
-                                        <input type="checkbox" value="1" id="checkbox-merito-exatec" name="" class="input-checkbox" />
+                                        <input type="checkbox" value="1" id="checkbox-merito-exatec" id="merito" name="merito" class="input-checkbox" />
                                         <label for="checkbox-merito-exatec" class="label-checkbox"></label>
                                     </div>
                                     <p class="input-label">Mérito EXATEC</p>
@@ -161,14 +161,14 @@
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 custom-columns">
                                 <div class="wrapper-input">
-                                    <label class="input-label" for="name">Número de celular</label>
-                                    <input type="text" class="input-custom" name="name" placeholder="811 320 78 56">
+                                    <label class="input-label" for="telefono">Número de celular</label>
+                                    <input type="text" class="input-custom" name="telefono" placeholder="811 320 78 56">
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 custom-columns">
                                 <div class="wrapper-input">
-                                    <label class="input-label" for="name">Email</label>
-                                    <input type="text" class="input-custom" name="name" placeholder="fernando.montemayor@gmail.com">
+                                    <label class="input-label" for="email">Email</label>
+                                    <input type="text" class="input-custom" name="email" placeholder="fernando.montemayor@gmail.com">
                                 </div>
                             </div>
                         </div>
