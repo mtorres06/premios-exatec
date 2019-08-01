@@ -71,7 +71,7 @@
                           </li> 
 
                           <li class="nav-item">
-                              <a class="nav-link" id="txt-menu" href="#link-ganadores">Galería de ganadores</a>
+                              <a class="nav-link" id="txt-menu" href="ganadores.php">Galería de ganadores</a>
                           </li>
                       
                           <li class="nav-item">

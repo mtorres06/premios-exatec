@@ -139,17 +139,30 @@
                     <div class="col-xl-12 col-lg-12">
                         <div class="slider slider-states">
                             <div class="slider-element">Sinaloa</div>
+                            <div class="slider-element">Sonora Norte</div>
                             <div class="slider-element">Zacatecas</div>
                             <div class="slider-element">Guadalajara</div>
                             <div class="slider-element">Hidalgo</div>
+                            <div class="slider-element">Cuernavaca</div>
                             <div class="slider-element">Toluca</div>
                             <div class="slider-element">Puebla</div>
-                            <div class="slider-element">Sinaloa</div>
-                            <div class="slider-element">Zacatecas</div>
-                            <div class="slider-element">Guadalajara</div>
-                            <div class="slider-element">Hidalgo</div>
-                            <div class="slider-element">Toluca</div>
-                            <div class="slider-element">Puebla</div>
+                            <div class="slider-element">Chiapas</div>
+                            <div class="slider-element">Querétaro</div>
+                            <div class="slider-element">Morelia</div>
+                            <div class="slider-element">San Luis Potosí</div>
+                            <div class="slider-element">León</div>
+                            <div class="slider-element">Irapuato</div>
+                            <div class="slider-element">Saltillo</div>
+                            <div class="slider-element">Ciudad Juárez</div>
+                            <div class="slider-element">Tampico</div>
+                            <div class="slider-element">Laguna</div>
+                            <div class="slider-element">Chihuahua</div>
+                            <div class="slider-element">Región Cd. de México</div>
+                            <div class="slider-element">EGOB México</div>
+                            <div class="slider-element">EGOB Santa Fe</div>
+                            <div class="slider-element">EGOB Monterrey</div>
+                            <div class="slider-element">Cuernavaca</div>
+                            
                         </div>
                     </div>
                 </div>

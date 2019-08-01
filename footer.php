@@ -6,7 +6,7 @@
 			</div>
 			<div class="col-12 col-lg-3 col-sm-3">  
 				<ul>
-					<li><a href="#link-ganadores">Ganadores</a></li>
+					<li><a href="ganadores.php">Ganadores</a></li>
 					<li><a href="questions.php">Preguntas Frecuentes</a></li>
 				</ul>
 			</div>  
