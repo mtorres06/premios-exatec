@@ -34,7 +34,7 @@
                 <li v-bind:class="{ selected: showStep3 }">3. Resumen</span></li>
             </ul>
         </div>
-        <form class="form-custom form-process" id="formulario" v-on:submit="enviar()" method="post" action="gracias.php">
+        <form class="form-custom form-process" enctype="multipart/form-data" id="formulario" v-on:submit="enviar()" method="post" action="gracias.php">
             <div class="container-fluid background-form">
                 <div class="row">
                     <div class="col-xl-8 col-lg-8 offset-xl-2 offset-lg-2" v-show="showStep1">
@@ -253,4 +253,4 @@
     </div>
 </div>
 <script src="procesoformvue.js">
-    <?php include('footer.php'); ?>
+<?php include('footer.php'); ?>
