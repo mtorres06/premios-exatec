@@ -51,9 +51,15 @@ var procesoForm = new Vue({
                 this.goToStep2();
             }
         },
-        enviar:function() {
+        enviar:function(event) {
             var formulario = $('#formulario').serialize();
-            console.log(formulario);
+            var url = $('#formulario')[0].action;
+            if(!formulario){
+                event.preventDefault();
+            }
+            else {
+                console.log(formulario);
+            }
         },
         Init: function() {
             this.showStep1 = true;
