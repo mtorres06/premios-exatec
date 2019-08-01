@@ -68,7 +68,7 @@
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="ValidationForInputsAndMore\validationForProceso2.js"></script>
+  <!-- <script src="ValidationForInputsAndMore\validationForProceso2.js"></script> -->
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

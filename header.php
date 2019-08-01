@@ -27,6 +27,8 @@
   <?php 
   // <base href="http://www.tagindex.net/html/">
   ?>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  
   <meta name="theme-color" content="#fafafa">
 </head>
 
