@@ -26,8 +26,8 @@
         </div>
     </div>
 
-    <div class="wrapper-form">
-        <div class="step-container">
+    <div class="wrapper-form container-fluid">
+        <div class="step-container container-fluid">
             <ul class="custom-list step-list">
                 <li v-bind:class="{ selected: showStep1 }">1. Datos de contacto</li>
                 <li v-bind:class="{ selected: showStep2 }">2. Datos del nominado</span></li>
@@ -37,11 +37,12 @@
         <form class="form-custom form-process" enctype="multipart/form-data" id="formulario" v-on:submit="enviar()" method="post" action="gracias.php">
             <div class="container-fluid background-form">
                 <div class="row">
-                    <div class="col-xl-8 col-lg-8 offset-xl-2 offset-lg-2" v-show="showStep1">
+                    <div class="col-xl-8 col-lg-8 offset-xl-2 offset-lg-2 form-step" v-show="showStep1">
                         <div class="info-contact-content">
                             <h3 class="heading heading-03">1. Datos del contacto</h3>
                             <p class="info-contact-txt">
-                                Es posible que necesitemos de tu apoyo para verificar la información de tu nominado, por lo que te pedimos completar los siguientes campos.
+                                Es posible que necesitemos de tu apoyo para verificar la información de tu nominado, por
+                                lo que te pedimos completar los siguientes campos.
                             </p>
                         </div>
 
@@ -51,7 +52,8 @@
                                 <div class="wrapper-input wrapper-checkbox">
                                     <div class="">
                                         <label for="checkbox-persona-moral" class="label-checkbox">
-                                            <input type="radio" value="1" id="checkbox-persona-moral" name="checkbox-persona-moral" class="input-checkbox" />
+                                            <input type="radio" value="1" id="checkbox-persona-moral"
+                                                name="checkbox-persona-moral" class="input-checkbox" />
                                         </label>
                                     </div>
                                     <p class="input-label">Persona moral</p>
@@ -60,7 +62,8 @@
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                                 <div class="wrapper-input wrapper-checkbox">
                                     <div class="">
-                                        <input type="radio" id="checkbox-persona-fisica"  name="checkbox-persona-fisica" class="input-checkbox" />
+                                        <input type="radio" id="checkbox-persona-fisica" name="checkbox-persona-fisica"
+                                            class="input-checkbox" />
                                         <label for="checkbox-persona-fisica" class="label-checkbox"></label>
                                     </div>
                                     <p class="input-label">Persona física</p>
@@ -72,19 +75,22 @@
                             <div class="col-xl-4 col-lg-4">
                                 <div class="wrapper-input">
                                     <label class="input-label" for="contacto-nombre">Nombre completo*</label>
-                                    <input type="text" class="input-custom" name="contacto-nombre" id="contacto-nombre" placeholder="Fernando Raúl Montemayor Díaz">
+                                    <input type="text" class="input-custom" name="contacto-nombre" id="contacto-nombre"
+                                        placeholder="Fernando Raúl Montemayor Díaz">
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4">
                                 <div class="wrapper-input">
                                     <label class="input-label" for="contacto-telefono">Número de celular</label>
-                                    <input type="text" class="input-custom" name="contacto-telefono" id="contacto-telefono" placeholder="811 320 78 56">
+                                    <input type="text" class="input-custom" name="contacto-telefono"
+                                        id="contacto-telefono" placeholder="811 320 78 56">
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4">
                                 <div class="wrapper-input">
                                     <label class="input-label" for="contacto-email">Email</label>
-                                    <input type="text" class="input-custom" name="contacto-email" id="contacto-email" placeholder="fernando.montemayor@gmail.com">
+                                    <input type="text" class="input-custom" name="contacto-email" id="contacto-email"
+                                        placeholder="fernando.montemayor@gmail.com">
                                 </div>
                             </div>
                         </div>
@@ -97,11 +103,14 @@
                         </div>
 
                     </div>
-                    <div class="col-xl-8 col-lg-8 offset-xl-2 offset-lg-2" v-show="showStep2">
+                    <div class="col-xl-8 col-lg-8 offset-xl-2 offset-lg-2 form-step" v-show="showStep2">
                         <div class="info-contact-content">
                             <h3 class="heading heading-03">2. Datos del nominado</h3>
                             <p class="info-contact-txt">
-                                Recuerda que al realizar tu nominación puedes compartir ejemplos personales, así como cuidar el orden, sintaxis, conexión de ideas, gramática y ortografía en la postulación y portafolio de evidencias, recuerda que esta información será revisada por los miembros del jurado.
+                                Recuerda que al realizar tu nominación puedes compartir ejemplos personales, así como
+                                cuidar el orden, sintaxis, conexión de ideas, gramática y ortografía en la postulación y
+                                portafolio de evidencias, recuerda que esta información será revisada por los miembros
+                                del jurado.
                             </p>
                         </div>
                         <p class="title-section-checkbox">
@@ -112,7 +121,8 @@
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                                 <div class="wrapper-input wrapper-checkbox">
                                     <div class="checkbox-custom">
-                                        <input type="checkbox" value="1" id="checkbox-postumo-si" name="checkbox-postumo-si" class="input-checkbox" />
+                                        <input type="radio" value="1" id="checkbox-postumo-si"
+                                            name="checkbox-postumo" class="input-checkbox" />
                                         <label for="checkbox-postumo-si" class="label-checkbox"></label>
                                     </div>
                                     <p class="input-label">Sí</p>
@@ -121,7 +131,8 @@
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                                 <div class="wrapper-input wrapper-checkbox">
                                     <div class="checkbox-custom">
-                                        <input type="checkbox" value="1" id="checkbox-postumo-no" name="checkbox-postumo-no" class="input-checkbox" />
+                                        <input type="radio" value="1" id="checkbox-postumo-no"
+                                            name="checkbox-postumo" class="input-checkbox" />
                                         <label for="checkbox-postumo-no" class="label-checkbox"></label>
                                     </div>
                                     <p class="input-label">No</p>
@@ -136,7 +147,8 @@
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                                 <div class="wrapper-input wrapper-checkbox">
                                     <div class="checkbox-custom">
-                                        <input type="checkbox" value="1" id="checkbox-trayectoria-exatec" name="checkbox-trayectoria-exatec" class="input-checkbox" />
+                                        <input type="checkbox" value="1" id="checkbox-trayectoria-exatec"
+                                            name="checkbox-trayectoria-exatec" class="input-checkbox" />
                                         <label for="checkbox-trayectoria-exatec" class="label-checkbox"></label>
                                     </div>
                                     <p class="input-label">Trayectoria EXATEC</p>
@@ -145,7 +157,8 @@
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                                 <div class="wrapper-input wrapper-checkbox">
                                     <div class="checkbox-custom">
-                                        <input type="checkbox" value="1" id="checkbox-merito-exatec" name="checkbox-merito-exatec" class="input-checkbox" />
+                                        <input type="checkbox" value="1" id="checkbox-merito-exatec"
+                                            name="checkbox-merito-exatec" class="input-checkbox" />
                                         <label for="checkbox-merito-exatec" class="label-checkbox"></label>
                                     </div>
                                     <p class="input-label">Mérito EXATEC</p>
@@ -156,19 +169,22 @@
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 custom-columns">
                                 <div class="wrapper-input">
                                     <label class="input-label" for="nominado-nombre">Nombre completo*</label>
-                                    <input type="text" class="input-custom" id="nominado-nombre" name="nominado-nombre" placeholder="Fernando Raúl Montemayor Díaz">
+                                    <input type="text" class="input-custom" id="nominado-nombre" name="nominado-nombre"
+                                        placeholder="Fernando Raúl Montemayor Díaz">
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 custom-columns">
                                 <div class="wrapper-input">
                                     <label class="input-label" for="nominado-telefono">Número de celular</label>
-                                    <input type="text" class="input-custom" name="nominado-telefono" id="nominado-telefono" placeholder="811 320 78 56">
+                                    <input type="text" class="input-custom" name="nominado-telefono"
+                                        id="nominado-telefono" placeholder="811 320 78 56">
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 custom-columns">
                                 <div class="wrapper-input">
                                     <label class="input-label" for="nominado-email">Email</label>
-                                    <input type="text" class="input-custom" name="nominado-email" id="nominado-email" placeholder="fernando.montemayor@gmail.com">
+                                    <input type="text" class="input-custom" name="nominado-email" id="nominado-email"
+                                        placeholder="fernando.montemayor@gmail.com">
                                 </div>
                             </div>
                         </div>
@@ -183,8 +199,11 @@
                                     <div class="container-input-file">
                                         <label class="form-input form-input--file ">
                                             <span class="form-input--file-text">Archivo</span>
-                                            <span class="form-input--file-button button-general button-primary button-input-file">Cargar archivo</span>
-                                            <input class="form-input-file" type="file" id="evidencias" name="evidencias" accept="image/*" size="14" />
+                                            <span
+                                                class="form-input--file-button button-general button-primary button-input-file">Cargar
+                                                archivo</span>
+                                            <input class="form-input-file" type="file" id="evidencias" name="evidencias"
+                                                accept="image/*" size="14" />
                                         </label>
                                     </div>
                                 </div>
@@ -202,11 +221,12 @@
                         </div>
 
                     </div>
-                    <div class="col-xl-8 col-lg-8 offset-xl-2 offset-lg-2" v-show="showStep3">
+                    <div class="col-xl-8 col-lg-8 offset-xl-2 offset-lg-2 form-step" v-show="showStep3">
                         <div class="info-contact-content">
                             <h3 class="heading heading-03">3. Curriculum del nominado</h3>
                             <p class="info-contact-txt">
-                                Por último necesitamos el curriculum de la persona nominada. Recuerda que esta información será revisada por los miembros del jurado.
+                                Por último necesitamos el curriculum de la persona nominada. Recuerda que esta
+                                información será revisada por los miembros del jurado.
                             </p>
                         </div>
                         <div class="row">
@@ -216,8 +236,11 @@
                                     <div class="container-input-file">
                                         <label class="form-input form-input--file ">
                                             <span class="form-input--file-text">Archivo</span>
-                                            <span class="form-input--file-button button-general button-primary button-input-file">Cargar archivo</span>
-                                            <input class="form-input-file" type="file" id="cv" name="cv" accept="image/*" size="14" />
+                                            <span
+                                                class="form-input--file-button button-general button-primary button-input-file">Cargar
+                                                archivo</span>
+                                            <input class="form-input-file" type="file" id="cv" name="cv"
+                                                accept="image/*" size="14" />
                                         </label>
                                     </div>
                                 </div>
@@ -252,5 +275,6 @@
         </form>
     </div>
 </div>
-<script src="procesoformvue.js">
+<script src="procesoformvue.js"></script>
+<hr class="mt-5 mb-5">
 <?php include('footer.php'); ?>

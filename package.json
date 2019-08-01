@@ -1,18 +1,18 @@
 {
-  "name": "exatec",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "doc": "doc"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "sass --watch sass/main.scss:css/main.css --style compressed --sourcemap=none"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "node-sass": "^4.12.0"
-  }
+    "name": "exatec",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "directories": {
+        "doc": "doc"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch": "sass --watch sass/main.scss:css/main.css --style compressed"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "node-sass": "^4.12.0"
+    }
 }

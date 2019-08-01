@@ -3,25 +3,31 @@
 	Description:    CSS overrides for base styles, new base 
 					definitions and styles for layout components.
 **********************************************************************************/
+
+
 /*! HTML5 Boilerplate v7.1.0 | MIT License | https://html5boilerplate.com/ */
 
+
 /* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
 
- 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
 
-   html {
+html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -43,6 +49,7 @@
     text-shadow: none;
 }
 
+
 /*
  * A better looking default horizontal rule
  */
@@ -55,6 +62,7 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
+
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -71,6 +79,7 @@ video {
     vertical-align: middle;
 }
 
+
 /*
  * Remove default fieldset styles.
  */
@@ -81,6 +90,7 @@ fieldset {
     padding: 0;
 }
 
+
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -88,6 +98,7 @@ fieldset {
 textarea {
     resize: vertical;
 }
+
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -98,34 +109,41 @@ textarea {
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
-}  
+}
 
- /* ==========================================================================
+
+/* ==========================================================================
    General styles
    ========================================================================== */
-body { font-family: $font-family-base; }
+
+body {
+    font-family: $font-family-base;
+}
 
 p,
 li,
-a { font-family: $font-family-base; }
+a {
+    font-family: $font-family-base;
+}
 
-a:hover { text-decoration: none !important; }
+a:hover {
+    text-decoration: none !important;
+}
 
 .separator {
     width: 100%;
     height: 1px;
     border: 0;
     background-color: $clr-gray3;
-
-    &.end-page-separator { height: 7px; }
-
+    &.end-page-separator {
+        height: 7px;
+    }
     &.small {
         width: 80px;
         height: 3px;
         background-color: $clr-black;
     }
-
-    &.extra-small { 
+    &.extra-small {
         width: 20px;
         height: 3px;
         background-color: $clr-black;
@@ -133,7 +151,7 @@ a:hover { text-decoration: none !important; }
 }
 
 .fig-scroll {
-    width: 100px; 
+    width: 100px;
     height: 100px;
     background-image: url(../img/icons/icon-banner-scroll.svg);
     @include background-image(center, contain);
@@ -146,21 +164,19 @@ a:hover { text-decoration: none !important; }
         letter-spacing: 1.42px;
         line-height: 46px;
     }
-
     &.heading-02 {
         font-family: $font-family-base;
         font-size: $font-size-h2;
         letter-spacing: 0.98px;
         line-height: 35px;
     }
-
     &.heading-03 {
         font-family: $font-family-base-semiBold;
         font-size: $font-size-h3;
         letter-spacing: 0.8px;
         line-height: 41px;
     }
-} 
+}
 
 .button-general {
     width: fit-content;
@@ -169,88 +185,85 @@ a:hover { text-decoration: none !important; }
     background: none;
     display: block;
     text-align: center;
-	padding: 12px 22px 12px 16px;
-	@include transition;
-	cursor: pointer;
-     
-    &:hover{ text-decoration: none; }
-
+    padding: 12px 22px 12px 16px;
+    @include transition;
+    cursor: pointer;
+    &:hover {
+        text-decoration: none;
+    }
     &:hover,
     &:focus,
-    &:active { outline: 0; }
-    
+    &:active {
+        outline: 0;
+    }
     &.button-primary {
         background-color: $clr-blue;
         color: $clr-white;
         border: 1px solid $clr-blue;
         border-radius: 3px;
-
         &:hover {
             background-color: $clr-white;
             color: $clr-blue;
         }
-
-        &.button-form-process {  
-            .button-icon { margin-left: 120px; }
+        &.button-form-process {
+            margin-left: 20px;
+            color: $clr-white;
+            .button-icon {
+                margin-left: 120px;
+            }
         }
-
-        &.button-input-file { 
-            display: inline; 
+        &.button-input-file {
+            display: inline;
             position: relative;
             right: 5px;
             padding: 16px 22px 15px 16px;
             font-size: $font-size-small;
         }
     }
-
     &.button-secondary {
         font-size: $font-size-h2;
         color: $clr-white;
         background-color: transparent;
         border: 4px solid $clr-white;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-
-        .btn-bold-txt { font-weight: 700; }
-
+        .btn-bold-txt {
+            font-weight: 700;
+        }
         &:hover {
             color: $clr-white;
             background-color: $clr-white;
         }
-
-        &.button-banner { 
-            background-color: rgba(1, 13, 77, 0.66); 
-            
-            &:hover { 
+        &.button-banner {
+            background-color: rgba(1, 13, 77, 0.66);
+            &:hover {
                 color: $clr-black;
-                background-color: $clr-white; 
+                background-color: $clr-white;
             }
         }
     }
-
     &.button-control {
         width: 13px;
         height: 32px;
         border: 0;
         @include transition;
         @include background-image(center, contain);
-
-        &:hover { transform: scale(1.1); }
-
+        &:hover {
+            transform: scale(1.1);
+        }
         &.button-states {
             position: absolute;
             top: 6px;
             padding: 0;
             z-index: 2;
             background-image: url(../img/arrow-right-black.png);
-
-            &.button-left { 
-                left: 0; 
+            &.button-left {
+                left: 0;
                 transform: rotate(180deg);
             }
-
-            &.button-right { right: 0; }
+            &.button-right {
+                right: 0;
+            }
         }
-
         &.button-testimonial {
             position: absolute;
             top: 45%;
@@ -259,17 +272,16 @@ a:hover { text-decoration: none !important; }
             color: $clr-blue;
             z-index: 2;
             background-image: url(../img/arrow-right-blue.png);
-
-            &.button-left { 
-                left: 2%; 
+            &.button-left {
+                left: 2%;
                 transform: rotate(180deg);
             }
-
-            &.button-right { right: 2%; }
+            &.button-right {
+                right: 2%;
+            }
         }
     }
-
-    &.button-first-banner{
+    &.button-first-banner {
         padding: 23px 0px 23px 40px;
         bottom: 0;
         position: absolute;
@@ -282,16 +294,14 @@ a:hover { text-decoration: none !important; }
         font-weight: 500;
         line-height: 37px;
         text-align: left;
-
         &:hover {
             background-color: $clr-white;
             color: $clr-blue;
         }
-
-        .title{
+        .title {
             margin-bottom: 0;
         }
-        .line{
+        .line {
             border-top: 2px solid $clr-white;
             width: 25%;
             margin-top: 0;
@@ -303,22 +313,34 @@ a:hover { text-decoration: none !important; }
 .custom-list {
     margin: 0;
     padding-left: 0;
-
-    li { list-style: none; }
+    li {
+        list-style: none;
+    }
 }
 
 .personal-info-fields {
-    .custom-columns { padding-left: 0; }
+    .custom-columns {
+        padding-left: 0;
+    }
 }
 
-.hidden-sm-up { display: inline-block; }
+.hidden-sm-up {
+    display: inline-block;
+}
 
-.visible-desktop { visibility: visible; }
+.visible-desktop {
+    visibility: visible;
+}
+
+
 /*****************************************************************************************/
+
+
 /******************************************************************************************
  Class: 		$media queries
  Description:	CSS definition for responsive design
 ******************************************************************************************/
+
 @media (max-width: 1199px) {
     .heading {
         &.heading-01 {
@@ -336,44 +358,47 @@ a:hover { text-decoration: none !important; }
             letter-spacing: 1px;
             line-height: 46px;
         }
-
         &.heading-02 {
             font-size: $font-size-medium3;
             line-height: 26px;
         }
-
-        &.heading-03 { font-size: $font-size-medium; }
+        &.heading-03 {
+            font-size: $font-size-medium;
+        }
     }
-
     .fig-scroll {
         width: 60px;
         height: 60px;
     }
-
-    .visible-desktop { visibility: hidden; }
+    .visible-desktop {
+        visibility: hidden;
+    }
 }
 
 @media (max-width: 767px) {
     .button-general {
-        &.button-primary { 
-            font-size: $font-size-small; 
+        &.button-primary {
+            font-size: $font-size-small;
             max-width: 288px;
-        } 
-
-        &.button-secondary { 
-            font-size: $font-size-regular; 
-            
-            &.button-banner { background-color: transparent; }
         }
-
+        &.button-secondary {
+            font-size: $font-size-regular;
+            &.button-banner {
+                background-color: transparent;
+            }
+        }
         &.button-first-banner {
-            .title { line-height: 30px; }
+            .title {
+                line-height: 30px;
+            }
         }
     }
-
-    .fig-scroll { display: none; }
-
-    .hidden-sm-up { display: none; }
+    .fig-scroll {
+        display: none;
+    }
+    .hidden-sm-up {
+        display: none;
+    }
 }
 
 
@@ -381,15 +406,17 @@ a:hover { text-decoration: none !important; }
    Helper classes
    ========================================================================== */
 
+
 /*
  * Hide visually and from screen readers
  */
 
- .hidden {
+.hidden {
     display: none !important;
-  }
-  
-  /*
+}
+
+
+/*
   * Hide only visually, but have it available for screen readers:
   * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
   *
@@ -397,8 +424,8 @@ a:hover { text-decoration: none !important; }
   *    causes content to wrap 1 word per line:
   *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
   */
-  
-  .visuallyhidden {
+
+.visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -407,17 +434,19 @@ a:hover { text-decoration: none !important; }
     padding: 0;
     position: absolute;
     width: 1px;
-    white-space: nowrap; /* 1 */
-  }
-  
-  /*
+    white-space: nowrap;
+    /* 1 */
+}
+
+
+/*
   * Extends the .visuallyhidden class to allow the element
   * to be focusable when navigated to via the keyboard:
   * https://www.drupal.org/node/897638
   */
-  
-  .visuallyhidden.focusable:active,
-  .visuallyhidden.focusable:focus {
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -425,17 +454,19 @@ a:hover { text-decoration: none !important; }
     position: static;
     width: auto;
     white-space: inherit;
-  }
-  
-  /*
+}
+
+
+/*
   * Hide visually and from screen readers, but maintain layout
   */
-  
-  .invisible {
+
+.invisible {
     visibility: hidden;
-  }
-  
-  /*
+}
+
+
+/*
   * Clearfix: contain floats
   *
   * For modern browsers
@@ -446,108 +477,100 @@ a:hover { text-decoration: none !important; }
   * 2. The use of `table` rather than `block` is only necessary if using
   *    `:before` to contain the top-margins of child elements.
   */
-  
-  .clearfix:before,
-  .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-  }
-  
-  .clearfix:after {
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
     clear: both;
-  }
-  
-   
-  /* ==========================================================================
+}
+
+
+/* ==========================================================================
      EXAMPLE Media Queries for Responsive Design.
      These examples override the primary ('mobile first') styles.
      Modify as content requires.
      ========================================================================== */
-  
-     @media only screen and (min-width: 35em) {
-      /* Style adjustments for viewports that meet the condition */
-  }
-  
-  @media print,
-         (-webkit-min-device-pixel-ratio: 1.25),
-         (min-resolution: 1.25dppx),
-         (min-resolution: 120dpi) {
-      /* Style adjustments for high resolution devices */
-  }
-  
-   
-  /* ==========================================================================
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
      Print styles.
      Inlined to avoid the additional HTTP request:
      https://www.phpied.com/delay-loading-your-print-css/
      ========================================================================== */
-  
-     @media print {
-      *,
-      *:before,
-      *:after {
-          background: transparent !important;
-          color: #000 !important; /* Black prints faster */
-          -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-          text-shadow: none !important;
-      }
-  
-      a,
-      a:visited {
-          text-decoration: underline;
-      }
-  
-      a[href]:after {
-          content: " (" attr(href) ")";
-      }
-  
-      abbr[title]:after {
-          content: " (" attr(title) ")";
-      }
-  
-      /*
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    /*
        * Don't show links that are fragment identifiers,
        * or use the `javascript:` pseudo protocol
        */
-  
-      a[href^="#"]:after,
-      a[href^="javascript:"]:after {
-          content: "";
-      }
-  
-      pre {
-          white-space: pre-wrap !important;
-      }
-      pre,
-      blockquote {
-          border: 1px solid #999;
-          page-break-inside: avoid;
-      }
-  
-      /*
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
        * Printing Tables:
        * http://css-discuss.incutio.com/wiki/Printing_Tables
        */
-  
-      thead {
-          display: table-header-group;
-      }
-  
-      tr,
-      img {
-          page-break-inside: avoid;
-      }
-  
-      p,
-      h2,
-      h3 {
-          orphans: 3;
-          widows: 3;
-      }
-  
-      h2,
-      h3 {
-          page-break-after: avoid;
-      }
-  }
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

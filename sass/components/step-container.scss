@@ -2,29 +2,33 @@
     Name: step-coontainer
     Description: Represent the basics styles for main layout and body element 
 ******************************************************************************************/
+
 .step-container {
     background-color: $clr-gray;
     padding: 24px 0 20px;
-
     .custom-list {
         &.step-list {
             display: flex;
             justify-content: center;
-
             li {
                 font-family: $font-family-base-semiBold;
                 font-size: $font-size-regular;
                 color: $clr-black;
-
-                &.selected { color: $clr-blue; }
-
-                &:nth-child(2) { margin: 0 73px; }
+                &.selected {
+                    color: $clr-blue;
+                }
+                &:nth-child(2) {
+                    margin: 0 73px;
+                }
             }
         }
     }
 }
 
+
 /*****************************************************************************************/
+
+
 /******************************************************************************************
 Class: 		$media queries
 Description:	CSS definition for responsive design

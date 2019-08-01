@@ -39,22 +39,7 @@
 				<div class="col-12 col-lg-7 col-sm-7">
 					<h2>© Instituto Tecnológico y de Estudios Superiores de Monterrey, México. 2018 | <a class="font-color" target="_blank" href="https://tec.mx/es/aviso-de-privacidad-exalumnos">Aviso de Privacidad</a></h2>
 				</div>
-				<div class="col-12 col-lg-3 col-sm-4 offset-lg-2 col-sm-2 offset-sm-1">
-					<div class="social-media">
-					<a href="https://www.facebook.com/exatec/" target="_blank">
-							<img class="icon-social" src="img/icon-fb.png" alt="">
-						</a>
-						<a href="https://www.instagram.com/exatecoficial/" target="_blank">
-							<img class="icon-social" src="img/unnamed(1).png" alt="">
-						</a>
-						<a href="https://twitter.com/exatec" target="_blank">							
-							<img class="icon-social" src="img/unnamed(2).png" alt="">
-						</a>
-						<a href="https://www.youtube.com/user/EXATECvideo" target="_blank">
-							<img class="icon-social" src="img/unnamed(3).png" alt="">
-						</a>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</div>
