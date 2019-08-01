@@ -75,22 +75,20 @@
                             <div class="col-xl-4 col-lg-4">
                                 <div class="wrapper-input">
                                     <label class="input-label" for="contacto-nombre">Nombre completo*</label>
-                                    <input type="text" class="input-custom" name="contacto-nombre" id="contacto-nombre"
-                                        placeholder="Fernando Raúl Montemayor Díaz">
+                                    <input type="text" class="input-custom" name="contacto-nombre" id="contacto-nombre">
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4">
                                 <div class="wrapper-input">
                                     <label class="input-label" for="contacto-telefono">Número de celular</label>
                                     <input type="text" class="input-custom" name="contacto-telefono"
-                                        id="contacto-telefono" placeholder="811 320 78 56">
+                                        id="contacto-telefono">
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4">
                                 <div class="wrapper-input">
                                     <label class="input-label" for="contacto-email">Email</label>
-                                    <input type="text" class="input-custom" name="contacto-email" id="contacto-email"
-                                        placeholder="fernando.montemayor@gmail.com">
+                                    <input type="text" class="input-custom" name="contacto-email" id="contacto-email">
                                 </div>
                             </div>
                         </div>
@@ -121,8 +119,8 @@
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                                 <div class="wrapper-input wrapper-checkbox">
                                     <div class="checkbox-custom">
-                                        <input type="radio" value="1" id="checkbox-postumo-si"
-                                            name="checkbox-postumo" class="input-checkbox" />
+                                        <input type="radio" value="1" id="checkbox-postumo-si" name="checkbox-postumo"
+                                            class="input-checkbox" />
                                         <label for="checkbox-postumo-si" class="label-checkbox"></label>
                                     </div>
                                     <p class="input-label">Sí</p>
@@ -131,8 +129,8 @@
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                                 <div class="wrapper-input wrapper-checkbox">
                                     <div class="checkbox-custom">
-                                        <input type="radio" value="1" id="checkbox-postumo-no"
-                                            name="checkbox-postumo" class="input-checkbox" />
+                                        <input type="radio" value="1" id="checkbox-postumo-no" name="checkbox-postumo"
+                                            class="input-checkbox" />
                                         <label for="checkbox-postumo-no" class="label-checkbox"></label>
                                     </div>
                                     <p class="input-label">No</p>
@@ -169,22 +167,20 @@
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 custom-columns">
                                 <div class="wrapper-input">
                                     <label class="input-label" for="nominado-nombre">Nombre completo*</label>
-                                    <input type="text" class="input-custom" id="nominado-nombre" name="nominado-nombre"
-                                        placeholder="Fernando Raúl Montemayor Díaz">
+                                    <input type="text" class="input-custom" id="nominado-nombre" name="nominado-nombre">
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 custom-columns">
                                 <div class="wrapper-input">
                                     <label class="input-label" for="nominado-telefono">Número de celular</label>
                                     <input type="text" class="input-custom" name="nominado-telefono"
-                                        id="nominado-telefono" placeholder="811 320 78 56">
+                                        id="nominado-telefono">
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 custom-columns">
                                 <div class="wrapper-input">
                                     <label class="input-label" for="nominado-email">Email</label>
-                                    <input type="text" class="input-custom" name="nominado-email" id="nominado-email"
-                                        placeholder="fernando.montemayor@gmail.com">
+                                    <input type="text" class="input-custom" name="nominado-email" id="nominado-email">
                                 </div>
                             </div>
                         </div>
