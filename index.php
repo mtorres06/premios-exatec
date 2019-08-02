@@ -23,7 +23,7 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-xl-9 col-lg-9 col-sm-12 col-sm-12 col-12 offset-xl-2 offset-lg-2 offset-sm-0">
-                                        <p class="title">Nomina a un EXATEC</p>
+                                        <p class="title"><a href="proceso1.php">Nomina a un EXATEC</a></p>
                                         <hr class="line">
                                         <i class="fas fa-chevron-right"></i>
                                     </div>
@@ -104,16 +104,16 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-12 col-lg-7 col-sm-7">
+                        <div class="col-12 col-lg-6 col-sm-6">
                             <img class="img2 img-fluid" src="img/Merito-EXATEC2.jpg" alt="">
                         </div>
-                        <div class="col-12 col-lg-5 col-sm-5">
+                        <div class="col-12 col-lg-6 col-sm-6">
                             <div class="box-text2">
                                 <p class="text2">Egresados que en su quehacer profesional han impactado positivamente al Tec y en su comunidad. Esta distinción se otorga a través de campus, regiones o escuelas de graduados que participen en las convocatorias.</p>
                                 <div class="row">
                                     <div class="col-10 offset-2">
                                         <a href="#">
-                                            <p id="link-ganadores" class="text-win">Ver ganadores</p>
+                                            <p id="link-ganadores" class="text-win"><a href="ganadores.php">Ver ganadores</a></p>
                                             <hr class="line-win">
                                             <i class="fas fa-chevron-right"></i>
                                         </a>
@@ -138,6 +138,7 @@
                 <div class="row">
                     <div class="col-xl-12 col-lg-12">
                         <div class="slider slider-states">
+                        <div class="slider-element">Ciudad Obregón</div>
                             <div class="slider-element">Sinaloa</div>
                             <div class="slider-element">Sonora Norte</div>
                             <div class="slider-element">Zacatecas</div>
@@ -147,6 +148,7 @@
                             <div class="slider-element">Toluca</div>
                             <div class="slider-element">Puebla</div>
                             <div class="slider-element">Chiapas</div>
+                            <div class="slider-element">Región Cd. de México</div>
                             <div class="slider-element">Querétaro</div>
                             <div class="slider-element">Morelia</div>
                             <div class="slider-element">San Luis Potosí</div>
@@ -156,12 +158,9 @@
                             <div class="slider-element">Ciudad Juárez</div>
                             <div class="slider-element">Tampico</div>
                             <div class="slider-element">Laguna</div>
-                            <div class="slider-element">Chihuahua</div>
-                            <div class="slider-element">Región Cd. de México</div>
-                            <div class="slider-element">EGOB México</div>
-                            <div class="slider-element">EGOB Santa Fe</div>
-                            <div class="slider-element">EGOB Monterrey</div>
-                            <div class="slider-element">Cuernavaca</div>                            
+                            <div class="slider-element">Chihuahua</div>                            
+                            <div class="slider-element">EGOB</div>
+                            <div class="slider-element">EGADE</div>                      
                         </div>
                     </div>
                 </div>
@@ -180,7 +179,7 @@
 
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12 offset-md-1 offset-lg-1 offset-md-1 offset-sm-0 offset-0">
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6 offset-md-1 offset-lg-1 offset-md-1 offset-sm-0 offset-0">
                         <div class="wrapper-tip">
                             <div class="icon-tip icon-research"></div>
                             <p class="tip-text tip-title">Investiga</p>
@@ -190,7 +189,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-6 col-6">
                         <div class="wrapper-tip">
                             <div class="icon-tip icon-planning"></div>
                             <p class="tip-text tip-title">Planea</p>
@@ -200,7 +199,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-6 col-6">
                         <div class="wrapper-tip">
                             <div class="icon-tip icon-describe"></div>
                             <p class="tip-text tip-title">Describe</p>
@@ -210,7 +209,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-6 col-6">
                         <div class="wrapper-tip">
                             <div class="icon-tip icon-complete"></div>
                             <p class="tip-text tip-title">Completa</p>
@@ -220,7 +219,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-6 col-xs-6 col-6">
                         <div class="wrapper-tip">
                             <div class="icon-tip icon-confirm"></div>
                             <p class="tip-text tip-title">Confirma</p>

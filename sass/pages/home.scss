@@ -2,9 +2,9 @@
     Name: home
     Description: Represent the basics styles for main layout and body element 
 ******************************************************************************************/
+
 .home {
     overflow-x: hidden;
-
     .bg-lines {
         position: relative;
         z-index: 1;
@@ -12,26 +12,22 @@
         background-image: url(../img/bg-lines.png);
         @include background-image(-19% 550%, 49% 103%);
     }
-
     .nominate-exatec {
         margin-bottom: 45px;
-
-        .first-banner{
+        .first-banner {
             padding-top: 0;
-
             .txt1,
             .txt2,
             .txt3,
-            .txt4{
+            .txt4 {
                 font-family: $font-family-base-bold;
                 font-size: $font-size-slide-title;
-                text-align:center;
+                text-align: center;
                 margin-bottom: 5px;
             }
-            .box-txt{
+            .box-txt {
                 padding: 30px;
             }
-
             .icon-scroll {
                 position: absolute;
                 right: 0;
@@ -40,7 +36,6 @@
                 height: 90px;
             }
         }
-
         .size-image {
             display: block;
             width: 100%;
@@ -48,13 +43,11 @@
             background-image: url(../img/banner-nominates.png);
             @include background-image(-400px, 130%);
         }
-
-        .fa-chevron-right{
+        .fa-chevron-right {
             float: right;
             margin-top: -33px;
         }
-
-        .icon-scroll{
+        .icon-scroll {
             position: absolute;
             float: right;
             right: 0;
@@ -62,38 +55,33 @@
             bottom: 0;
         }
     }
-
     .awards-exatec {
         padding: 70px 0;
         z-index: -1;
         position: relative;
-
-        .bg-img{
+        .bg-img {
             z-index: 1;
             position: relative;
         }
-
-        .box-txt{
+        .box-txt {
             background-color: $clr-gray6;
             padding: 65px 115px 65px 90px;
             margin-top: 150px;
             margin-left: -80px;
-
-            .first-title{
+            .first-title {
                 color: $clr-black;
                 font-family: $font-family-base-bold;
                 font-size: $font-size-large;
                 text-align: left;
                 margin-bottom: 0;
             }
-
-            .line1{
+            .line1 {
                 border-top: 2px solid $clr-black;
                 width: 10%;
                 margin-top: 4px;
                 margin-bottom: 30px;
             }
-            .first-txt{
+            .first-txt {
                 color: $clr-black;
                 font-family: $font-family-base-semiBold;
                 font-size: $font-size-medium2;
@@ -101,42 +89,35 @@
             }
         }
     }
-
     .distinctions {
         overflow: hidden;
         padding: 60px 0 170px;
-
-        .padd-right{
+        .padd-right {
             padding-right: 0;
         }
-
-        .box-title{
+        .box-title {
             background-color: $clr-gray6;
             padding: 50px 0 110px;
             height: 1530px;
             position: absolute;
             width: 100%;
-
-            .txt1{
+            .txt1 {
                 text-align: center;
                 font-family: $font-family-base-bold;
                 font-size: $font-size-large;
                 color: $clr-black;
             }
-
-            .line3{
+            .line3 {
                 border-top: 2px solid $clr-black;
                 width: 10%;
                 margin: -10px auto 10px;
             }
         }
-
-        .block-title{
+        .block-title {
             background-color: $clr-black;
             padding: 33px;
             margin-top: 38%;
-
-            .txt{
+            .txt {
                 font-family: $font-family-base-medium;
                 font-size: $font-size-large5;
                 font-weight: 500;
@@ -147,19 +128,16 @@
                 margin-bottom: 0;
             }
         }
-
-        .img1{
+        .img1 {
             height: 571px;
             margin-left: -30px;
             margin-top: 27%;
         }
-
-        .box-text{
+        .box-text {
             background-color: $clr-white;
             padding: 50px 110px;
             margin-top: -53%;
-
-            .text{
+            .text {
                 font-family: $font-family-base-medium;
                 font-size: $font-size-large4;
                 font-weight: 500;
@@ -169,29 +147,24 @@
                 color: $clr-black;
             }
         }
-
         .block-two {
-
-            .sin-padd{
+            .sin-padd {
                 padding-right: 0;
                 padding-left: 0;
             }
-
-            .img2{
+            .img2 {
                 background-color: $clr-red;
                 margin-top: -40px;
                 z-index: 1;
                 position: relative;
             }
-
-            .box-text2{
+            .box-text2 {
                 background-color: $clr-white;
                 padding: 70px 45px 90px;
                 margin-left: -50px;
                 margin-top: -93px;
             }
-
-            .text2{
+            .text2 {
                 font-family: $font-family-base-medium;
                 font-size: $font-size-large4;
                 font-weight: 500;
@@ -200,8 +173,7 @@
                 text-align: left;
                 color: $clr-black;
             }
-
-            .text-win{
+            .text-win {
                 font-family: $font-family-base-semiBold;
                 font-size: $font-size-h2;
                 font-weight: 600;
@@ -210,28 +182,24 @@
                 text-align: left;
                 margin-bottom: 0;
             }
-
-            .line-win{
+            .line-win {
                 border-top: 2px solid $clr-blue;
                 width: 10%;
                 margin: 5px;
             }
-
-            .fa-chevron-right{
+            .fa-chevron-right {
                 color: $clr-blue;
                 text-align: right;
                 float: right;
                 margin-top: -35px;
             }
-
-            .block-title{
+            .block-title {
                 background-color: $clr-black;
                 padding: 33px;
                 margin-top: -19px;
                 z-index: 999;
                 position: relative;
-    
-                .txt{
+                .txt {
                     font-family: $font-family-base-medium;
                     font-size: $font-size-large5;
                     font-weight: 500;
@@ -243,79 +211,72 @@
                 }
             }
         }
-    }   
-    
+    }
     .campus-participants {
         margin: 0 0 140px;
-
         .container-main-title {
-            margin-bottom: 45px; 
-
+            margin-bottom: 45px;
             .heading {
                 &.main-title {
                     text-align: center;
                 }
-
                 .separator {
-                    &.small { margin: 10px auto 0; }
+                    &.small {
+                        margin: 10px auto 0;
+                    }
                 }
             }
         }
     }
-
     .testimonial {
         padding-bottom: 72px;
         background-color: $clr-gray6;
-
-        .container-main-title { 
-            padding: 50px 0; 
-        
+        .container-main-title {
+            padding: 50px 0;
             .heading {
                 &.main-title {
                     text-align: center;
                 }
-
                 .separator {
-                    &.small { margin: 10px auto 0; }
+                    &.small {
+                        margin: 10px auto 0;
+                    }
                 }
             }
         }
     }
-
     .tips {
         padding: 30px 0;
         background-image: url(../img/bg-lines.png);
         @include background-image(-93%, 78%);
-        
         .container-main-title {
-            margin-bottom: 75px; 
-
+            margin-bottom: 75px;
             .heading {
                 &.main-title {
                     text-align: center;
                 }
-
                 .separator {
-                    &.small { margin: 10px auto 0; }
+                    &.small {
+                        margin: 10px auto 0;
+                    }
                 }
             }
         }
-
         .wrapper-tip {
             .separator {
-                &.extra-small { margin: 0; }
+                &.extra-small {
+                    margin: 0;
+                }
             }
         }
     }
-
     .banner {
-        &.banner-with-button {  
+        &.banner-with-button {
             background-image: url(../img/img-banner-button-filter.jpg);
             background-size: cover;
             background-position: 0px -115px;
         }
     }
-
     /*****************************************************************************************/
     /******************************************************************************************
     Class: $media queries
@@ -325,256 +286,227 @@
         .bg-lines {
             @include background-image(-19% 1270%, 49% 103%);
         }
-
         .nominate-exatec {
-            .button-first-banner{
+            .button-first-banner {
                 font-size: $font-size-medium;
             }
-
             .first-banner {
-                .txt1, 
-                .txt2, 
-                .txt3, 
+                .txt1,
+                .txt2,
+                .txt3,
                 .txt4 {
                     position: relative;
                     font-size: $font-size-large4;
                 }
-
-                .txt1 { right: 25%; } 
-
-                .txt2 { left: 25%; }  
-
-                .txt3 { right: 38%; } 
-
-                .txt4 { left: 10%; } 
+                .txt1 {
+                    right: 25%;
+                }
+                .txt2 {
+                    left: 25%;
+                }
+                .txt3 {
+                    right: 38%;
+                }
+                .txt4 {
+                    left: 10%;
+                }
             }
-
             .size-image {
                 height: 360px;
                 @include background-image(-200px, 140%);
             }
-
-            .fa-chevron-right{ margin-top: -28px; }
+            .fa-chevron-right {
+                margin-top: -28px;
+            }
         }
-
     }
-
     @media (max-width: 991px) {
         .bg-lines {
             @include background-image(0% 670px, 79% 63%);
         }
-
-        .nominate-exatec{
-            .fa-chevron-right{ margin-top: -28px; }
-            
+        .nominate-exatec {
+            .fa-chevron-right {
+                margin-top: -28px;
+            }
             .first-banner {
-                .txt1, 
-                .txt2, 
-                .txt3, 
+                .txt1,
+                .txt2,
+                .txt3,
                 .txt4 {
                     position: relative;
                     font-size: $font-size-medium2;
                 }
-
-                .txt1 { right: 15%; } 
-
-                .txt2 { left: 15%; }  
-
-                .txt3 { right: 28%; } 
-
-                .txt4 { left: 8%; } 
+                .txt1 {
+                    right: 15%;
+                }
+                .txt2 {
+                    left: 15%;
+                }
+                .txt3 {
+                    right: 28%;
+                }
+                .txt4 {
+                    left: 8%;
+                }
             }
-
             .size-image {
                 height: 450px;
                 @include background-image(100% 50%, 140%);
             }
         }
-
-        .awards-exatec{
-            .box-txt{
-                .first-txt{
+        .awards-exatec {
+            .box-txt {
+                .first-txt {
                     font-size: $font-size-medium;
                 }
-
-            } 
+            }
         }
-
-        .distinctions { 
+        .distinctions {
             padding: 60px 0 0px;
-
-            .block-title{
+            .block-title {
                 margin-top: 140px;
-
-                .txt{
+                .txt {
                     font-size: $font-size-medium2;
                 }
             }
-
-            .img1 { 
-                margin-top: 178px; 
+            .img1 {
+                margin-top: 178px;
                 height: 380px;
             }
-
-            .box-text{
+            .box-text {
                 margin-top: -230px;
-
-                .text{
+                .text {
                     font-size: $font-size-h3;
                     line-height: 35px;
                 }
             }
-
-            .block-two{
-                .block-title{
-                    .txt{
+            .block-two {
+                .block-title {
+                    .txt {
                         font-size: $font-size-h3;
                     }
                 }
-                
-                .box-text2 { padding: 70px 45px 40px; }
-                
-                .text2{
+                .box-text2 {
+                    padding: 70px 45px 40px;
+                }
+                .text2 {
                     font-size: $font-size-h3;
                     line-height: 35px;
                 }
-
-            } 
+            }
         }
-
-        .button-first-banner{
+        .button-first-banner {
             font-size: $font-size-small4;
         }
-         
         .campus-participants {
             margin: 30px 0 60px;
         }
     }
-
     @media (max-width: 767px) {
         .nominate-exatec {
             margin-bottom: 25px;
-
             .size-image {
                 height: 380px;
                 @include background-image(right, 140%);
             }
-            
             .button-first-banner {
                 max-width: 280px;
                 font-size: $font-size-small;
                 padding: 4px 0;
             }
-
-            .fa-chevron-right{ margin-top: -25px; }
-
-            .icon-scroll { display: none; }
+            .fa-chevron-right {
+                margin-top: -25px;
+            }
+            .icon-scroll {
+                display: none;
+            }
         }
-        
-
-        .awards-exatec{
+        .awards-exatec {
             padding: 0px 0 30px;
-
-            .box-txt{
+            .box-txt {
                 margin-top: 0;
                 margin-left: -46px;
                 padding: 27px 27px 27px 47px;
             }
         }
-
-        .distinctions{
+        .distinctions {
             padding: 60px 0 30px;
-
-            .padd-right{
+            .padd-right {
                 padding-right: 15px;
             }
-
-            .box-title{
+            .box-title {
                 padding: 27px 0 110px;
                 height: 1210px;
-
-                .txt1{
+                .txt1 {
                     font-size: $font-size-h3;
                 }
             }
-
-            .block-title{
+            .block-title {
                 padding: 0px;
                 margin-top: 28%;
                 z-index: 999;
                 position: relative;
-
-                .txt{
+                .txt {
                     font-size: $font-size-regular;
                 }
             }
-
-            .img1{
+            .img1 {
                 margin-left: 0;
                 margin-top: -18px;
                 height: auto;
             }
-
-            .box-text{
+            .box-text {
                 padding: 7px;
                 margin-top: -150px;
-
-                .text{
+                .text {
                     font-size: $font-size-regular;
                     line-height: 25px;
                 }
             }
-
-            .block-two{
-                .text-win { font-size: $font-size-regular; }
-
-                .sin-padd{
+            .block-two {
+                .text-win {
+                    font-size: $font-size-regular;
+                }
+                .sin-padd {
                     padding-right: 15px;
                     padding-left: 15px;
                 }
-
-                .img2{
+                .img2 {
                     margin-top: -15px;
                 }
-
-                .block-title{
+                .block-title {
                     padding: 0;
                     margin-top: 15px;
-
-                    .txt{
-                        font-size:$font-size-regular;
+                    .txt {
+                        font-size: $font-size-regular;
                     }
                 }
-
-                .box-text2{
+                .box-text2 {
                     padding: 10px;
                     margin-left: -40px;
                     margin-top: 0;
-
-                    .text2{
+                    .text2 {
                         font-size: $font-size-regular;
                         line-height: 25px;
                     }
                 }
             }
         }
-
-        .campus-participants { margin: 30px 0 60px; }
+        .campus-participants {
+            margin: 30px 0 60px;
+        }
     }
-
     @media (max-width: 479px) {
         .nominate-exatec {
             .size-image {
                 height: 220px;
                 @include background-image(100% 50%, 137% 220px);
             }
-
-            .fa-chevron-right{
+            .fa-chevron-right {
                 margin-top: -26px;
             }
         }
-        
-        .awards-exatec {            
+        .awards-exatec {
             .box-txt {
                 background-color: #F9F9F9;
                 padding: 65px 115px 65px 90px;
@@ -583,76 +515,60 @@
                 padding: 7px;
             }
         }
-
-        .distinctions{
+        .distinctions {
             padding: 60px 0 60px;
-
-            .padd-right{
+            .padd-right {
                 padding-right: 15px;
             }
-
-            .box-title{
+            .box-title {
                 padding: 27px 0 110px;
                 height: 1210px;
-
-                .txt1{
+                .txt1 {
                     font-size: $font-size-h3;
                 }
             }
-
-            .block-title{
+            .block-title {
                 padding: 0px;
                 margin-top: 58%;
                 z-index: 999;
                 position: relative;
-
-                .txt{
+                .txt {
                     font-size: $font-size-regular;
                 }
             }
-
-            .img1{
+            .img1 {
                 margin-left: 0;
                 margin-top: -18px;
                 height: auto;
             }
-
-            .box-text{
+            .box-text {
                 padding: 7px;
                 margin-top: 0;
-
-                .text{
+                .text {
                     font-size: $font-size-regular;
                     line-height: 25px;
                 }
             }
-
-            .block-two{
-
-                .sin-padd{
+            .block-two {
+                .sin-padd {
                     padding-right: 15px;
                     padding-left: 15px;
                 }
-
-                .img2{
+                .img2 {
                     margin-top: -15px;
                 }
-
-                .block-title{
+                .block-title {
                     padding: 0;
                     margin-top: 15px;
-
-                    .txt{
-                        font-size:$font-size-regular;
+                    .txt {
+                        font-size: $font-size-regular;
                     }
                 }
-
-                .box-text2{
+                .box-text2 {
                     padding: 10px;
                     margin-left: 0;
                     margin-top: 0;
-
-                    .text2{
+                    .text2 {
                         font-size: $font-size-regular;
                         line-height: 25px;
                     }
@@ -661,20 +577,3 @@
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-

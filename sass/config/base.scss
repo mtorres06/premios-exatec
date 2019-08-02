@@ -300,6 +300,13 @@ a:hover {
         }
         .title {
             margin-bottom: 0;
+            a {
+                text-decoration: none;
+                color: $clr-white;
+            }
+            a:hover {
+                color: $clr-blue;
+            }
         }
         .line {
             border-top: 2px solid $clr-white;
@@ -317,7 +324,6 @@ a:hover {
         list-style: none;
     }
 }
-
 
 p.field-description {
     line-height: 25px;

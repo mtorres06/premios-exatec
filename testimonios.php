@@ -23,41 +23,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="slider-element">        
-            <div class="card-container">
-                <div class="left-content">
-                    <div class="wrapper-slide-title">
-                        <p class="slide-title">CP´57 MA´71</p>
-                    </div>
-                </div>
-                <div class="right-content">
-                    <p class="slide-txt slide-message">
-                    Entre tantas cosas que agradezco de ser EXATEC es que mi Universidad no deja de sorprenderme por esa constante búsqueda de la excelencia, innovación basándose siempre en los valores que hacen del SERHUMANO una mejor persona cada día. Mil gracias por haberme permitido pertenecer a este proyecto. SIIIII estoy dispuesto para participar nuevamente. Felicitaciones por esa iniciativa que demuestra una vez más que las mejores ideas y/o iniciativas nacen de querer hacer las cosas con cariño y a un nivel que solo sea expresión de nuestro mejor esfuerzo.
-                    <p class="slide-txt slide-author">Fernando Álvarez Golsarri</p>
-                    <p class="slide-txt slide-award">Ganador Premio al Mérito EXATEC Campus Puebla 2014 .</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="slider-element">        
-            <div class="card-container">
-                <div class="left-content">
-                    <div class="wrapper-slide-title">
-                        <p class="slide-title">IMA'84</p>
-                    </div>
-                </div>
-                <div class="right-content">
-                    <p class="slide-txt slide-message">
-                    Agradezco principalmente a Dios por la vida, a mi familia por las oportunidades que me brindaron, a mi madre por inculcarnos el esfuerzo diario; a mi esposa por ser cómplice en cada logro y a mis hijos quienes siempre han sido un gran apoyo” comentó el egresado luego de recibir el premio. 
-                    Busquen siempre cumplir sus sueños, aprovechen las oportunidades que se les han brindado al estudiar en el Tecnológico de Monterrey.
-                    </p>
-                    <p class="slide-txt slide-author">Luis Arizpe Jiménez</p>
-                    <p class="slide-txt slide-award">Ganador Premio al Mérito EXATEC Campus Saltillo 2015.</p>
-                </div>
-            </div>
-        </div>
-
         <div class="slider-element">        
             <div class="card-container">
                 <div class="left-content">
@@ -215,7 +180,7 @@
                     <p class="slide-txt slide-message">
                     Son reconocimientos que motivan a salir adelante, pero estamos hechos para trabajar siempre y hacerlo por los demás y hay que hacerlo siempre, hasta el final.
                     </p>
-                    <p class="slide-txt slide-author">- Leopoldo Enrique Mares Delgado</p>
+                    <p class="slide-txt slide-author">Leopoldo Enrique Mares Delgado</p>
                     <p class="slide-txt slide-award">Ganador Premio al Mérito EXATEC Campus Chihuahua 2018.</p>
                 </div>
             </div>
@@ -236,23 +201,7 @@
                 </div>
             </div>
         </div>
-        <div class="slider-element">        
-            <div class="card-container">
-                <div class="left-content">
-                    <div class="wrapper-slide-title">
-                        <p class="slide-title">LCC´77</p>
-                    </div>
-                </div>
-                <div class="right-content">
-                    <p class="slide-txt slide-message">
-                    “Es para mí un orgullo que esta institución, el Instituto Tecnológico y de Estudios Superiores de Monterrey… me otorgue el reconocimiento al Mérito Exatec” 
-“Los exalumnos del Tec son muchos (280 mil de preparatoria, maestría y posgrados) y por sus características de educación de excelencia, estoy seguro que debe haber muchos más que tengan más méritos que yo y son pocos los que los reciben”, dijo con humildad. “Los méritos no son míos, son de una serie de personas y acontecimientos que han hecho una diferencia en mi vida”, añadió el empresario, tras agradecer a sus padres, a su esposa Beatriz, a sus hijos, hermanos y otros familiares, a sus amigos, a sus compañeros de trabajo y socios de negocios. Y a sus maestros y mentores. “Y por supuesto a Dios”, recalcó.
-                    </p>
-                    <p class="slide-txt slide-author">Enrique Yamuni Robles</p>
-                    <p class="slide-txt slide-award">Ganador Premio al Mérito EXATEC Campus Guadalajara 2018.</p>
-                </div>
-            </div>
-        </div>
+
         <div class="slider-element">        
             <div class="card-container">
                 <div class="left-content">

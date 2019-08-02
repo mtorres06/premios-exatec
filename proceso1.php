@@ -31,7 +31,7 @@
             <ul class="custom-list step-list">
                 <li v-bind:class="{ selected: showStep1 }">1. Datos de contacto</li>
                 <li v-bind:class="{ selected: showStep2 }">2. Datos del nominado</span></li>
-                <li v-bind:class="{ selected: showStep3 }">3. Semblanza</span></li>
+                <li v-bind:class="{ selected: showStep3 }">3. Semblanza del nominado</span></li>
             </ul>
         </div>
         <form class="form-custom form-process" enctype="multipart/form-data" id="formulario" method="post" action="gracias.php">
@@ -242,16 +242,16 @@
                     </div>
                     <div class="col-xl-8 col-lg-8 offset-xl-2 offset-lg-2 form-step" v-show="showStep3">
                         <div class="info-contact-content">
-                            <h3 class="heading heading-03">3. Curriculum del nominado</h3>
+                            <h3 class="heading heading-03">3. Semblanza del nominado</h3>
                             <p class="info-contact-txt">
-                                Por último necesitamos el curriculum de la persona nominada. Recuerda que esta
+                                Por último necesitamos la semblanza de la persona nominada. Recuerda que esta
                                 información será revisada por los miembros del jurado.
                             </p>
                         </div>
                         <div class="row">
                             <div class="col-xl-6 col-lg-6">
                                 <div class="wrapper-input wrapper-file">
-                                    <p class="input-label">Sube el currculum de la persona nominada</p>
+                                    <p class="input-label">Sube la semblanza de la persona nominada</p>
                                     <div class="container-input-file">
                                         <label class="form-input form-input--file ">
                                             <span class="form-input--file-text">Archivo</span>
@@ -265,15 +265,16 @@
                                 </div>
                             </div>
                         </div>
+                        <hr class="mt-5 mb-5 ">
                         <div class="row">
-                            <div class="col-xl-6 col-lg-6">
-                                <div class="wrapper-input">
-                                    <label class="input-label" for="ejemplos">Razón de nominar</label>
-                                    <p class="field-description">Describe y/o justifica las razones por las cuales propones al Premio al Mérito EXATEC al egresado postulado y que lo hacen merecedor de este reconocimiento. 
-Tip. Comparte ejemplos personales, esta es una manera memorable de 
-hacer que tu candidato se destaque.
-Máximo 3000 caracteres</span></p>
+                            <div class="col-12 info-contact-content">
+                            
+                                    <p class="info-contact-txt">Describe y/o justifica las razones por las cuales propones a tu candidato al Premio seleccionado y que lo hacen merecedor de este reconocimiento. <strong><br/>¿Por qué nominar?</strong></p>
+	<p class="info-contact-txt"><strong>Tip</strong> Comparte ejemplos personales, esta es una 	manera memorable de hacer que tu candidato 	se destaque.</p>
+</span></p>
 
+                                <div class="wrapper-input">
+                                <label class="input-label" for="ejemplos">Razón de nominar</label>
                                     <input type="text" class="input-custom" name="ejemplos" placeholder="Escribir">
                                 </div>
                             </div>

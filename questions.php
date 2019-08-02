@@ -40,9 +40,6 @@
                         <p class="title1">¿Dónde puedo realizar la nominación?</p>
                         <p class="txt">A través de la página de https://egresados.itesm.mx/vinculacion/PremiosEXATEC, a través del formato de nominación en línea.</p>
 
-                        <p class="title1">¿Cuántas postulaciones puedo realizar?</p>
-                        <p class="txt">No hay límite en el número de postulaciones a realizar, puedes nominar a todo EXATEC que cumpla con los criterios de nominación.</p>
-
                         <p class="title1">¿Se aceptan postulaciones póstumas?</p>
                         <p class="txt">Sí, no mayor a 5 años de fallecido el nominado.</p>
                         
@@ -74,7 +71,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-sm-6 offset-sm-3">
-                        <h2 class="title1">¿Resolvimos tu duda?</h2>
+                        <h2 class="title1">¿Tienes otra pregunta?</h2>
                         <h3 class="title2">Escribe un correo a la siguiente dirección y nosotros te contactaremos.</h3>
                         <p class="title3">premios.EXATEC@servicios.itesm.mx</p>
                     </div>

@@ -17,13 +17,16 @@
         <div class="row">
             <article class="col-12 col-lg-8 offset-lg-1 col-sm-8 offset-sm-1 block-txt">
                 <ul>
-                    <li>Cualquier egresado de profesional, posgrado y/o preparatoria del Tecnológico de Monterrey que cumpla con el perfil de la convocatoria podrá ser ​​nominado. </li>
-                    <li>Egresados de al menos 15 años de trayectoria EXATEC o de 35 años de edad como mínimo, nacionales o extranjeros.</li>
-                    <li>Se aceptan nominaciones póstumas no mayor a 5 años, más no se aceptarán auto-nominaciones, pueden ser nominados por cualquier persona física o moral.</li>
-                    <li>Los egresados nominados al premio deberán ser líderes en sus campos y a través del portafolio de evidencias y experiencia comprobables demuestren haber realizado una contribución destacada a en cualquier área o disciplina.  </li>
-                    <li>Los candidatos postulados, de no resultar ganadores, podrán ser considerados para los siguientes años del Premio. Los comités de campus, regionales o de escuelas, deberán contactar a la persona que nominó para corroborar y/o actualizar información el siguiente año inmediato, sin necesidad de ingresar nuevamente todo el expediente. </li>
-                    <li>Toda postulación o nominación de candidatos debe de quedar registrada a través del formulario electrónico disponible en la página de Premios EXATEC. No serán consideradas nominaciones recibidas por otros medios. Es responsabilidad de los campus, regiones o escuelas, capturar aquellas nominaciones que se recibieron a través de otros medios, para que quede el registro e historial del candidato y pueda ser considerado.</li>
-                    <li>La convocatoria global se realiza durante los meses de junio a agosto y se entrega el premio entre febrero y mayo del año siguiente. (Ej. El premio 2020 se convoca entre junio y agosto de 2019).</li>
+                    <li>Cualquier egresado de profesional, posgrado y/o preparatoria del Tecnológico de Monterrey que cumpla con el perfil de la convocatoria podrá ser ​​nominado.</li>
+                    <li>Cualquier persona física o moral puede proponer candidatos a los Premios EXATEC. No se aceptan autonominaciones.</li>
+                    <li>Los egresados nominados deberán ser líderes en sus campos y contar con evidencias comprobables.</li>
+                    <li>Los candidatos deberán ser egresados del Tec, con al menos 15 años de trayectoria profesional EXATEC o de 35 años de edad como mínimo, de nacionalidad mexicana o extranjera.</li>
+                    <li>Su impacto profesional puede ser en cualquier disciplina y en cualquier parte del mundo.</li>
+                    <li>Se aceptan nominaciones póstumas no mayores a 5 años.</li>
+                    <li>Toda postulación o nominación de candidatos debe quedar registrada a través del portal EXATEC en el formato de nominación oficial. No serán consideradas nominaciones recibidas por otros medios. </li>
+                    <li>Cada nominación realizada podrá ser considerada para el año de postulación y para el siguiente año inmediato; se contactará al postulante para corroborar y/o actualizar la información. Aquellos candidatos que no hayan sido seleccionados como ganadores podrán ser nominados nuevamente en años futuros.</li>
+                    <li>Los ganadores de cada distinción serán contactados directamente, previo aviso al postulante.</li>
+                    <li>Las historias y fotos de los ganadores serán publicados como parte de la estrategia de comunicación de los Premios. </li>
                 </ul>
             </article>
         </div>

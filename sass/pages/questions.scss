@@ -2,12 +2,11 @@
     Name: questions
     Description: Represent the styles for the page questions 
 ******************************************************************************************/
-.questions{
-    
-    .block-txt{
-        padding: 60px 0;
 
-        .title1{
+.questions {
+    .block-txt {
+        padding: 60px 0;
+        .title1 {
             font-family: $font-family-base-semiBold;
             font-size: $font-size-medium2;
             text-align: left;
@@ -17,8 +16,7 @@
             color: $clr-blue;
             margin-top: 35px;
         }
-
-        .txt{
+        .txt {
             color: $clr-black;
             font-family: $font-family-base-medium;
             font-size: $font-size-medium3;
@@ -28,29 +26,19 @@
             text-align: left;
         }
     }
-
-
+    .banner-with-txt {
+        .title1 {
+            font-size: $font-size-h1;
+        }
+    }
     /*****************************************************************************************/
     /******************************************************************************************
     Class: 		$media queries
     Description:	CSS definition for responsive design
     ******************************************************************************************/
     @media (max-width: 767px) {
-        .block-txt { padding: 0 0 60px; }
+        .block-txt {
+            padding: 0 0 60px;
+        }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 

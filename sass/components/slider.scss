@@ -1,253 +1,240 @@
-/******************************************************************************************
+    /******************************************************************************************
     Name: slider
     Description: Represent the basics styles for main layout and body element 
 ******************************************************************************************/
-.slider {
-    .slick-slide {
-        &:active,
-        &:focus,
-        &:hover { outline: 0; }
-    }
-
-    &.slider-states {
+    
+    .slider {
         .slick-slide {
-            &.slider-element {
-                position: relative;
-                font-family: $font-family-base-semiBold;
-                font-size: $font-size-h3;
-                color: $clr-black;
-                text-align: center;
-                letter-spacing: 0.8px;
-                line-height: 41px;
-                z-index: 1;
+            min-height: 550px;
+            &:active,
+            &:focus,
+            &:hover {
+                outline: 0;
             }
         }
-    }
-
-    &.slider-testimonial {
-        .slick-list {
-            .slick-track { padding-bottom: 20px; }
+        &.slider-states {
+            .slick-slide {
+                &.slider-element {
+                    position: relative;
+                    font-family: $font-family-base-semiBold;
+                    font-size: $font-size-h3;
+                    color: $clr-black;
+                    text-align: center;
+                    letter-spacing: 0.8px;
+                    line-height: 41px;
+                    z-index: 1;
+                }
+            }
         }
-
-        .slick-slide {
-            &.slider-element {
-                display: flex;
-                justify-content: center;
-
-                .card-container {
+        &.slider-testimonial {
+            .slick-list {
+                .slick-track {
+                    padding-bottom: 20px;
+                }
+            }
+            .slick-slide {
+                &.slider-element {
                     display: flex;
-                    padding: 31px 29px;
-                    width: 100%;
-                    max-width: 1008px;
-                    background-color: $clr-white;
-                    border: 1px solid $clr-white;
-                    box-shadow: 0 7px 17px 0 rgba(127, 127, 127, 0.2);
-                    
-                    .left-content {
-                        margin-right: 60px;
-
-                        .wrapper-slide-title {
-                            padding: 9px 35px 5px;
-                            background-color: $clr-black;
-    
-                            .slide-title {
-                                margin-bottom: 0;
-                                font-family: $font-family-base-bold;
-                                font-size: $font-size-slide-title;
-                                color: $clr-white;
-                                text-align: center;
+                    justify-content: center;
+                    .card-container {
+                        display: flex;
+                        padding: 31px 29px;
+                        width: 100%;
+                        max-width: 1008px;
+                        background-color: $clr-white;
+                        border: 1px solid $clr-white;
+                        box-shadow: 0 7px 17px 0 rgba(127, 127, 127, 0.2);
+                        .left-content {
+                            margin-right: 60px;
+                            .wrapper-slide-title {
+                                padding: 9px 35px 5px;
+                                background-color: $clr-black;
+                                .slide-title {
+                                    margin-bottom: 0;
+                                    font-family: $font-family-base-bold;
+                                    font-size: $font-size-slide-title;
+                                    color: $clr-white;
+                                    text-align: center;
+                                }
                             }
                         }
-                    }
-                    
-                    .right-content {
-                        margin-top: 30px;
-
-                        .slide-txt {
-                            color: $clr-gray7;
-                            text-align: right;
-
-                            &.slide-message {
-                                font-size: $font-size-slide-message;
-                                line-height: 39px;
-                            }
-
-                            &.slide-author {
-                                margin-bottom: 0;
-                                font-size: $font-size-h2;
-                                letter-spacing: 0.96px;
-                                line-height: 47px;
-                            }
-
-                            &.slide-award {
-                                margin-bottom: 0;
-                                font-family: $font-family-base-medium;
-                                font-size: $font-size-medium3;
-                                color: $clr-black;
-                                font-style: italic;
-                                letter-spacing: 0.72px;
-                                line-height: 47px;
+                        .right-content {
+                            margin-top: 30px;
+                            .slide-txt {
+                                color: $clr-gray7;
+                                text-align: right;
+                                &.slide-message {
+                                    font-size: $font-size-slide-message;
+                                    line-height: 39px;
+                                }
+                                &.slide-author {
+                                    margin-bottom: 0;
+                                    font-size: $font-size-h2;
+                                    letter-spacing: 0.96px;
+                                    line-height: 47px;
+                                }
+                                &.slide-award {
+                                    margin-bottom: 0;
+                                    font-family: $font-family-base-medium;
+                                    font-size: $font-size-medium3;
+                                    color: $clr-black;
+                                    font-style: italic;
+                                    letter-spacing: 0.72px;
+                                    line-height: 47px;
+                                }
                             }
                         }
                     }
                 }
             }
         }
-    }
-    
-    /*****************************************************************************************/
-    /******************************************************************************************
+        /*****************************************************************************************/
+        /******************************************************************************************
     Class: 		$media queries
     Description:	CSS definition for responsive design
-    ******************************************************************************************/    
-    @media (max-width: 1199px) {
-        &.slider-testimonial {
-            .slick-slide {
-                &.slider-element {
-                    .card-container { max-width: 890px; }
-                } 
-            }
-        }
-    }
-    
-    @media (max-width: 991px) {
-        &.slider-states {
-            .slick-slide {
-                &.slider-element { font-size: $font-size-medium; }
-            }    
-        }
-
-        &.slider-testimonial {
-            .slick-slide {
-                &.slider-element {
-                    .card-container { 
-                        display: block;
-                        max-width: 680px; 
-
-                        .left-content {
-                            .wrapper-slide-title {
-                                width: fit-content;
-
-                                .slide-title { font-size: $font-size-large4; }
-                            }
-                        }
-
-                        .right-content {
-                            .slide-txt {
-                                &.slide-message {
-                                    font-size: $font-size-h3;
-                                    line-height: 32px;
-                                }
-
-                                &.slide-author {
-                                    font-size: $font-size-medium3;
-                                    line-height: 34px;
-                                }
-
-                                &.slide-award { font-size: $font-size-regular; }
-                            }
+    ******************************************************************************************/
+        @media (max-width: 1199px) {
+            &.slider-testimonial {
+                .slick-slide {
+                    &.slider-element {
+                        .card-container {
+                            max-width: 890px;
                         }
                     }
-                } 
+                }
             }
         }
-    }
-    
-    @media (max-width: 767px) {
-        &.slider-states {
-            .slick-slide {
-                &.slider-element { font-size: $font-size-regular; }
-            }    
-        }
-
-        &.slider-testimonial {
-            .slick-slide {
-                &.slider-element {
-                    .card-container { 
-                        display: block;
-                        max-width: 540px; 
-
-                        .left-content {
-                            .wrapper-slide-title {
-                                width: fit-content;
-
-                                .slide-title { font-size: $font-size-h3; }
+        @media (max-width: 991px) {
+            &.slider-states {
+                .slick-slide {
+                    &.slider-element {
+                        font-size: $font-size-medium;
+                    }
+                }
+            }
+            &.slider-testimonial {
+                .slick-slide {
+                    &.slider-element {
+                        .card-container {
+                            display: block;
+                            max-width: 680px;
+                            .left-content {
+                                .wrapper-slide-title {
+                                    width: fit-content;
+                                    .slide-title {
+                                        font-size: $font-size-large4;
+                                    }
+                                }
                             }
-                        }
-
-                        .right-content {
-                            .slide-txt {
-                                &.slide-message {
-                                    font-size: $font-size-medium;
-                                    line-height: 30px;
-                                }
-
-                                &.slide-author {
-                                    font-size: $font-size-medium;
-                                    line-height: 30px;
-                                }
-
-                                &.slide-award { 
-                                    font-size: $font-size-small; 
-                                    line-height: 22px;
+                            .right-content {
+                                .slide-txt {
+                                    &.slide-message {
+                                        font-size: $font-size-h3;
+                                        line-height: 32px;
+                                    }
+                                    &.slide-author {
+                                        font-size: $font-size-medium3;
+                                        line-height: 34px;
+                                    }
+                                    &.slide-award {
+                                        font-size: $font-size-regular;
+                                    }
                                 }
                             }
                         }
                     }
-                } 
+                }
             }
         }
-    }
-
-    @media (max-width: 599px) {
-        &.slider-testimonial {
-            .slick-slide {
-                &.slider-element {
-                    .card-container { 
-                        display: block;
-                        max-width: 480px; 
+        @media (max-width: 767px) {
+            &.slider-states {
+                .slick-slide {
+                    &.slider-element {
+                        font-size: $font-size-regular;
                     }
-                } 
+                }
             }
-        }
-    }
-
-    @media (max-width: 520px) {
-        &.slider-testimonial {
-            .slick-slide {
-                &.slider-element {
-                    .card-container { 
-                        display: block;
-                        max-width: 380px; 
+            &.slider-testimonial {
+                .slick-slide {
+                    &.slider-element {
+                        .card-container {
+                            display: block;
+                            max-width: 540px;
+                            .left-content {
+                                .wrapper-slide-title {
+                                    width: fit-content;
+                                    .slide-title {
+                                        font-size: $font-size-h3;
+                                    }
+                                }
+                            }
+                            .right-content {
+                                .slide-txt {
+                                    &.slide-message {
+                                        font-size: $font-size-medium;
+                                        line-height: 30px;
+                                    }
+                                    &.slide-author {
+                                        font-size: $font-size-medium;
+                                        line-height: 30px;
+                                    }
+                                    &.slide-award {
+                                        font-size: $font-size-small;
+                                        line-height: 22px;
+                                    }
+                                }
+                            }
+                        }
                     }
-                } 
+                }
             }
         }
-    }
-
-    @media (max-width: 479px) {
-        &.slider-testimonial {
-            .slick-slide {
-                &.slider-element {
-                    .card-container { 
-                        display: block;
-                        max-width: 320px; 
+        @media (max-width: 599px) {
+            &.slider-testimonial {
+                .slick-slide {
+                    &.slider-element {
+                        .card-container {
+                            display: block;
+                            max-width: 480px;
+                        }
                     }
-                } 
+                }
             }
         }
-    }
-
-    @media (max-width: 409px) {
-        &.slider-testimonial {
-            .slick-slide {
-                &.slider-element {
-                    .card-container { 
-                        display: block;
-                        max-width: 280px; 
+        @media (max-width: 520px) {
+            &.slider-testimonial {
+                .slick-slide {
+                    &.slider-element {
+                        .card-container {
+                            display: block;
+                            max-width: 380px;
+                        }
                     }
-                } 
+                }
+            }
+        }
+        @media (max-width: 479px) {
+            &.slider-testimonial {
+                .slick-slide {
+                    &.slider-element {
+                        .card-container {
+                            display: block;
+                            max-width: 320px;
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width: 409px) {
+            &.slider-testimonial {
+                .slick-slide {
+                    &.slider-element {
+                        .card-container {
+                            display: block;
+                            max-width: 280px;
+                        }
+                    }
+                }
             }
         }
     }
-}

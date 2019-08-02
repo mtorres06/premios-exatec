@@ -1,12 +1,14 @@
 /***************** Basic SASS FILES **********************/
+
 @import "config/fonts.scss";
 @import "config/variables.scss";
 @import "config/mixins.scss";
 @import "config/base.scss";
 
 /***************** Components SASS FILES *********************/
+
 @import "components/header.scss";
-@import "components/banner.scss"; 
+@import "components/banner.scss";
 @import "components/step-container.scss";
 @import "components/form-custom.scss";
 @import "components/footer.scss";
@@ -15,12 +17,12 @@
 @import "components/tips.scss";
 
 /***************** Pages SASS FILES *********************/
+
 @import "pages/home.scss";
 @import "pages/questions.scss";
 @import "pages/aquiennominar.scss";
+@import "pages/ganadores.scss";
 @import "pages/proceso1.scss";
 @import "pages/proceso2.scss";
 @import "pages/proceso3.scss";
 @import "pages/thank-you.scss";
-
-
