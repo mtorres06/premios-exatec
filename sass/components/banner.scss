@@ -2,21 +2,19 @@
     Name: banner
     Description: Represent the basics styles for main layout and body element 
 ******************************************************************************************/
-.banner{
+
+.banner {
     position: relative;
     height: 368px;
-
-    &.banner-simple{
+    &.banner-simple {
         background-image: url(../img/10188.jpg);
         background-size: cover;
         background-position: center center;
-
-        &.banner-process1 {  
+        &.banner-process1 {
             background-image: url(../img/img-banner-process1.jpg);
             @include background-image(50% 70%, cover);
         }
-
-        .bg-title{
+        .bg-title {
             background-color: $clr-white;
             padding: 23px 0px 23px 40px;
             top: 58%;
@@ -24,8 +22,7 @@
             width: 100%;
             max-width: 49%;
             z-index: 1;
-
-            .title{
+            .title {
                 font-family: $font-family-base-semiBold;
                 font-size: $font-size-h1;
                 text-align: left;
@@ -34,14 +31,12 @@
                 line-height: 41px;
             }
         }
-
         .fig-scroll {
             position: absolute;
             right: 60px;
             bottom: 60px;
             z-index: 1;
         }
-
         .filter {
             position: absolute;
             top: 0;
@@ -51,15 +46,13 @@
             background-image: linear-gradient(0deg, #010D4D 0%, rgba(0, 0, 0, 0) 100%);
         }
     }
- 
-    &.banner-with-txt{
+    &.banner-with-txt {
         height: 411px;
         padding: 75px 0;
         background-image: url(../img/2605.jpg);
         background-size: cover;
         background-position: center center;
-
-        .title1{
+        .title1 {
             font-family: $font-family-base-bold;
             font-size: $font-size-large2;
             font-weight: 700;
@@ -69,8 +62,7 @@
             color: $clr-white;
             margin-bottom: 40px;
         }
-
-        .title2{
+        .title2 {
             font-family: $font-family-base-semiBold;
             font-size: $font-size-large4;
             font-weight: 600;
@@ -79,8 +71,7 @@
             text-align: center;
             color: $clr-white;
         }
-
-        .title3{
+        .title3 {
             font-family: $font-family-base-bold;
             font-size: $font-size-h2;
             font-weight: 700;
@@ -90,20 +81,17 @@
             margin-top: 50px;
         }
     }
-
-    &.first-banner{
+    &.first-banner {
         position: relative;
         padding-top: 20px;
         height: auto;
     }
-
     &.banner-small {
         position: relative;
         height: 192px;
         background-color: chocolate;
         background-image: url(../img/2605.jpg);
         background-size: cover;
-
         .container-banner-txt {
             position: absolute;
             margin: 0;
@@ -111,7 +99,6 @@
             left: 50%;
             width: 100%;
             transform: translate(-50%, -50%);
-
             .banner-txt {
                 font-size: $font-size-large2;
                 font-weight: 700;
@@ -122,13 +109,11 @@
             }
         }
     }
-
     &.banner-with-button {
         position: relative;
         height: 411px;
         background-image: url(../img/img-banner-button-filter.jpg);
         @include background-image(0px -115px, cover);
-        
         .wrapper-button {
             position: absolute;
             margin: 0;
@@ -136,6 +121,22 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 1;
+        }
+        @media screen and(min-width:560) and(max-width: 700px) {
+            .wrapper-button {
+                top: 70%;
+            }
+        }
+        @media screen and(min-width:700) and(max-width: 1000px) {
+            .wrapper-button {
+                top: 80%;
+                left: 80%;
+            }
+        }
+        @media screen and(min-width: 1300px) {
+            .wrapper-button {
+                top: 70%;
+            }
         }
     }
     /*****************************************************************************************/
@@ -146,87 +147,80 @@
     @media (max-width: 1199px) {
         &.banner-simple {
             .bg-title {
-                .title { font-size: $font-size-h2; }
+                .title {
+                    font-size: $font-size-h2;
+                }
             }
         }
-
-        &.banner-with-button { height: 300px; }
+        &.banner-with-button {
+            height: 300px;
+        }
     }
-
     @media (max-width: 991px) {
-        &.banner-simple{
-            .bg-title{
+        &.banner-simple {
+            .bg-title {
                 top: 75%;
                 padding: 4px 0px 0px 40px;
-
-                .title{
+                .title {
                     font-size: $font-size-medium;
                 }
             }
-
-            .fig-scroll { bottom: 35px; }
-        } 
-
-        &.banner-with-txt{
-            .title1{
+            .fig-scroll {
+                bottom: 35px;
+            }
+        }
+        &.banner-with-txt {
+            .title1 {
                 font-size: $font-size-h2;
             }
-            .title2{
+            .title2 {
                 font-size: $font-size-h3;
             }
         }
     }
-
-    @media (max-width: 767px) {   
-        &.banner-simple{
+    @media (max-width: 767px) {
+        &.banner-simple {
             height: 240px;
-            
-            .bg-title{
+            .bg-title {
                 top: 64%;
                 padding: 4px 0px 5px 27px;
                 max-width: 53%;
-                
-                .title{
+                .title {
                     margin-bottom: 0;
-                    font-size:$font-size-small3;
+                    font-size: $font-size-small3;
                 }
             }
-        } 
-
-        &.banner-with-txt{
-            .title1{
+        }
+        &.banner-with-txt {
+            .title1 {
                 font-size: $font-size-h3;
             }
-            .title2{
+            .title2 {
                 font-size: $font-size-medium3;
                 line-height: 30px;
             }
         }
     }
-
     @media (max-width: 479px) {
-        &.banner-simple{
-            .bg-title{
+        &.banner-simple {
+            .bg-title {
                 padding: 4px 0px 5px 27px;
                 max-width: 75%;
-
-                .title{
+                .title {
                     font-size: $font-size-small;
                 }
             }
-        } 
-
-        &.banner-with-txt{
-            .title1{
+        }
+        &.banner-with-txt {
+            .title1 {
                 font-size: $font-size-medium;
             }
-            .title2{
+            .title2 {
                 font-size: $font-size-medium;
             }
-            .title3{
+            .title3 {
                 font-size: $font-size-medium;
             }
         }
     }
 }
-

@@ -161,8 +161,7 @@
                             <div class="slider-element">EGOB México</div>
                             <div class="slider-element">EGOB Santa Fe</div>
                             <div class="slider-element">EGOB Monterrey</div>
-                            <div class="slider-element">Cuernavaca</div>
-                            
+                            <div class="slider-element">Cuernavaca</div>                            
                         </div>
                     </div>
                 </div>
@@ -237,6 +236,7 @@
     
         <div class="banner banner-with-button">
             <div class="wrapper-button">
+            <div class="mb-5"></div>
                 <a class="button-general button-secondary button-banner" href="proceso1.php">
                     Nomina a un <span class="btn-bold-txt">EXATEC</span>
                 </a>
