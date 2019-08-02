@@ -1,7 +1,7 @@
 <?php include('header.php'); ?>
 
 <div class="nomination">
-        <div class="banner banner-simple">
+        <div class="banner banner-simple2">
             <div class="bg-title">
                 <div class="container-fluid">
                     <div class="row">

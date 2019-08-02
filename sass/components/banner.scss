@@ -7,7 +7,47 @@
     position: relative;
     height: 368px;
     &.banner-simple {
-        background-image: url(../img/10188.jpg);
+        background-image: url(../img/ganadores_2.jpg);
+        background-size: cover;
+        background-position: center center;
+        &.banner-process1 {
+            background-image: url(../img/img-banner-process1.jpg);
+            @include background-image(50% 70%, cover);
+        }
+        .bg-title {
+            background-color: $clr-white;
+            padding: 23px 0px 23px 40px;
+            top: 58%;
+            position: relative;
+            width: 100%;
+            max-width: 49%;
+            z-index: 1;
+            .title {
+                font-family: $font-family-base-semiBold;
+                font-size: $font-size-h1;
+                text-align: left;
+                font-weight: 600;
+                letter-spacing: 1.4px;
+                line-height: 41px;
+            }
+        }
+        .fig-scroll {
+            position: absolute;
+            right: 60px;
+            bottom: 60px;
+            z-index: 1;
+        }
+        .filter {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(0deg, #010D4D 0%, rgba(0, 0, 0, 0) 100%);
+        }
+    }
+    &.banner-simple2 {
+        background-image: url(../img/aquiennominar_1.jpg);
         background-size: cover;
         background-position: center center;
         &.banner-process1 {
