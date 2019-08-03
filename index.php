@@ -97,17 +97,17 @@
             <div class="block-two">
                 <div class="container-fluid sin-padd">
                     <div class="row">
-                        <div class="col-7 col-lg-4 offset-lg-3 col-sm-4 offset-sm-3">
+                        <div class="col-6 col-lg-5 offset-lg-0 col-sm-3 offset-sm-2">
                             <div class="block-title">
                                 <p class="txt">Mérito EXATEC</p>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-12 col-lg-6 col-sm-6">
+                        <div class="col-12 col-lg-5 col-sm-5">
                             <img class="img2 img-fluid" src="img/Merito-EXATEC2.jpg" alt="">
                         </div>
-                        <div class="col-12 col-lg-6 col-sm-6">
+                        <div class="col-12 col-lg-7 col-sm-7">
                             <div class="box-text2">
                                 <p class="text2">Egresados que en su quehacer profesional han impactado positivamente al Tec y en su comunidad. Esta distinción se otorga a través de campus, regiones o escuelas de graduados que participen en las convocatorias.</p>
                                 <div class="row">

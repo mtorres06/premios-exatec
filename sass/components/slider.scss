@@ -3,9 +3,14 @@
     Description: Represent the basics styles for main layout and body element 
 ******************************************************************************************/
     
-    .slider {
+    .slider-testimonial {
         .slick-slide {
             min-height: 550px;
+        }
+    }
+    
+    .slider {
+        .slick-slide {
             &:active,
             &:focus,
             &:hover {
