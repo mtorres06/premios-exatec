@@ -2,31 +2,39 @@
     Name: A quien nominar
     Description: Represent the styles for the  nominating list
 ******************************************************************************************/
-.nomination{    
-    .block-txt{
-        padding: 60px 0;
 
-       ul{
-           li{
-            color: $clr-black;
-            font-family: $font-family-base-medium;
-            font-size: $font-size-medium3;
-            font-weight: 500;
-            letter-spacing: 0.72px;
-            line-height: 23px;
-            text-align: left;
-            margin: 20px 30px 20px 0;
-           }
-       }        
+@media all and (max-width: 760px) {
+    h2.title {
+        &.nominar-title {
+            font-size: $font-size-medium3 !important;
+        }
     }
+}
 
+.nomination {
+    .block-txt {
+        padding: 60px 0;
+        ul {
+            li {
+                color: $clr-black;
+                font-family: $font-family-base-medium;
+                font-size: $font-size-medium3;
+                font-weight: 500;
+                letter-spacing: 0.72px;
+                line-height: 23px;
+                text-align: left;
+                margin: 20px 30px 20px 0;
+            }
+        }
+    }
     /*****************************************************************************************/
     /******************************************************************************************
     Class: 		$media queries
     Description:	CSS definition for responsive design
     ******************************************************************************************/
     @media (max-width: 767px) {
-        .block-txt { padding: 0 0 60px; }
+        .block-txt {
+            padding: 0 0 60px;
+        }
     }
 }
-

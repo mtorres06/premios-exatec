@@ -5,8 +5,8 @@
             <div class="bg-title">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-sm-8 offset-sm-2">
-                            <h1 class="title">¿A quién nominar?</h1>
+                        <div class="col-12 col-sm-8">
+                            <h2 class="title nominar-title">¿A quién nominar?</h2>
                         </div>
                     </div>
                 </div>

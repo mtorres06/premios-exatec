@@ -10,7 +10,7 @@
             <div class="card-container">
                 <div class="left-content">
                     <div class="wrapper-slide-title">
-                        <p class="slide-title">CP'65, MA'69</p>
+                        <p class="slide-title">CP’65, MA’69</p>
                     </div>
                 </div>
                 <div class="right-content">
@@ -66,27 +66,6 @@
                 </div>
             </div>
         </div>
-        <div class="slider-element">
-            <div class="card-container">
-                <div class="left-content">
-                    <div class="wrapper-slide-title">
-                        <p class="slide-title">IAZ’, MA’80</p>
-                    </div>
-                </div>
-                <div class="right-content">
-                    <p class="slide-txt slide-message">
-                        Me dio mucho gusto el reconocimiento y es un honor para mí y para mi familia. Este
-                        reconocimiento lo merece mucha gente, pero yo agradezco mucho que me hayan seleccionado.
-                        Agradezco al Tec, a los agrónomos y a las organizaciones donde he tenido actividades. Lo hice
-                        con mucho gusto por el Tec.
-                    </p>
-                    <p class="slide-txt slide-author">Ramón José Ávila Garza</p>
-                    <p class="slide-txt slide-award">Ganador Premio al Mérito EXATEC Campus Laguna 2017.</p>
-                </div>
-            </div>
-        </div>
-
-
 
         <div class="slider-element">
             <div class="card-container">
@@ -187,7 +166,7 @@
             <div class="card-container">
                 <div class="left-content">
                     <div class="wrapper-slide-title">
-                        <p class="slide-title">ISC´86</p>
+                        <p class="slide-title">ISC’86</p>
                     </div>
                 </div>
                 <div class="right-content">
@@ -206,7 +185,7 @@
             <div class="card-container">
                 <div class="left-content">
                     <div class="wrapper-slide-title">
-                        <p class="slide-title">IMA´71</p>
+                        <p class="slide-title">IMA’71</p>
                     </div>
                 </div>
                 <div class="right-content">
@@ -223,7 +202,7 @@
             <div class="card-container">
                 <div class="left-content">
                     <div class="wrapper-slide-title">
-                        <p class="slide-title">CP'62</p>
+                        <p class="slide-title">CP’62</p>
                     </div>
                 </div>
                 <div class="right-content">
@@ -242,7 +221,7 @@
             <div class="card-container">
                 <div class="left-content">
                     <div class="wrapper-slide-title">
-                        <p class="slide-title">IEC´80</p>
+                        <p class="slide-title">IEC’80</p>
                     </div>
                 </div>
                 <div class="right-content">
