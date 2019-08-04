@@ -5,7 +5,7 @@
             <div class="bg-title">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-sm-8">
+                        <div class="col-12 offset-sm-1">
                             <h2 class="title nominar-title">¿A quién nominar?</h2>
                         </div>
                     </div>
