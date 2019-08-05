@@ -1,4 +1,6 @@
-<?php include('header.php'); ?>
+<?php 
+    include('header.php');
+?>
 <div class="process process1 procesoForm" name="procesoForm" id="procesoForm">
     <div class="banner banner-simple banner-process1">
         <div class="bg-title">
@@ -86,6 +88,10 @@
                                         <label for="checkbox-exatec-si" class="label-checkbox"></label>
                                     </div>
                                     <p class="input-label">Si</p>
+                                    <div v-if="formularioValues.exatecSi">
+                                        <label class="input-label" for="contacto-nombre">Matricula</label>
+                                        <input type="text" v-model="formularioValues.matricula" class="input-custom" name="matricula" id="matricula">
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
@@ -137,7 +143,7 @@
                             <div class="col-xl-4 col-lg-4">
                                 <div class="wrapper-input">
                                     <label class="input-label" for="contacto-celular">N&uacute;mero de celular *</label>
-                                    <input type="number" v-model="formularioValues.contactoCelular" class="input-custom" name="contacto-celular"
+                                    <input type="text" v-model="formularioValues.contactoCelular" class="input-custom" name="contacto-celular"
                                         id="contacto-celular">
                                 </div>
                             </div>
@@ -227,6 +233,18 @@
                                 </div>
                             </div>
                         </div>
+                        <p class="title-section-checkbox">
+                            Selecciona el campus al que deseas dirigir esta nominaci&oacute;n
+                        </p>
+                        <div class="row personal-info-fields">
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 custom-columns">
+                                <select v-model="formularioValues.campusSeleccionado" class="input-custom">
+                                    <option v-for="campus in campus" v-bind:value="campus.value">
+                                        {{ campus.text }}
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
                         <div class="row personal-info-fields">
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 custom-columns">
                                 <div class="wrapper-input">
@@ -237,7 +255,7 @@
                             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 custom-columns">
                                 <div class="wrapper-input">
                                     <label class="input-label" for="nominado-celular">N&uacute;mero de celular *</label>
-                                    <input type="number" v-model="formularioValues.nominadoCelular" class="input-custom" name="nominado-celular"
+                                    <input type="text" v-model="formularioValues.nominadoCelular" class="input-custom" name="nominado-celular"
                                         id="nominado-celular">
                                 </div>
                             </div>
@@ -253,65 +271,66 @@
                             <div>
                                 <p class="title-section-checkbox field-description">Evidencia de logros del nominado                             
                                     <span class="title-italic">
-                                Como máximo se podrán adjuntar dos cartas en formato PDF no mayor a 2 cuartillas, que incluyan evidencia de logros profesionales; afiliaciones comunitarias / profesionales; premios, honores o condecoraciones; publicaciones; servicio y/o apoyo al TEC u otras organizaciones, entre otros.
+                                    Anexa a continuación un documento tipo PDF que integre aquellas evidencia de logros de tu nominado, tanto profesionales como afiliaciones comunitarias, premios, honores o condecoraciones, publicaciones, servicio extraordinarios y/o apoyo al TEC u otras organizaciones, entre otros.
                                     </span>
                                 </p>
                             </div>
                            
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-<template>
-<div class="example-full">
-  <div class="upload">
-    
-    <div class="table-responsive">
-      <table class="table table-hover" v-if="formularioValues.evidencias.archivos.length > 0">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Nombre</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="(file, index) in formularioValues.evidencias.archivos" :key="file.id">
-            <td>{{index + 1}}</td>
-            <td>
-              <div class="filename">
-                {{file.name}}
-              </div>
-            </td>
-            <td>
-              <div class="btn-group">
-                <button class="btn btn-danger btn-sm" @click.prevent="quitarArchivo(formularioValues.evidencias.archivos, index)">
-                    <i class="fa fa-times"></i>
-                </button>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="example-foorer">
-      <div class="btn-group">
-        <file-upload
-          class="btn btn-primary dropdown-toggle"
-          :post-action="postAction"
-          :put-action="putAction"
-          extensions="pdf"
-          accept="application/pdf"
-          :multiple="true"
-          :maximum="formularioValues.evidencias.maximoArchivos"
-          v-model="formularioValues.evidencias.archivos"
-          @input-file="inputFile"
-          ref="upload">
-          <i class="fa fa-plus"></i>
-          Cargar Archivo
-        </file-upload>
-      </div>
-    </div>
-  </div>
-</div>
-</template>
+                                <template>
+                                <div class="example-full">
+                                <div class="upload">
+                                    
+                                    <div class="table-responsive">
+                                    <table class="table table-hover" v-if="evidencias.archivos.length > 0">
+                                        <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Nombre</th>
+                                            <th></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr v-for="(file, index) in evidencias.archivos" :key="file.id">
+                                            <td>{{index + 1}}</td>
+                                            <td>
+                                            <div class="filename">
+                                                {{file.name}}
+                                            </div>
+                                            </td>
+                                            <td>
+                                            <div class="btn-group">
+                                                <button class="btn btn-danger btn-sm" @click.prevent="quitarArchivo(evidencias.archivos, index)">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                    <div class="example-foorer">
+                                    <div class="btn-group">
+                                        <file-upload
+                                            name="evidenciaArchivos"
+                                            input-id="evidenciaArchivos"
+                                        class="btn btn-primary"
+                                        post-action="api/nominacion.php"
+                                        :put-action="putAction"
+                                        extensions="pdf"
+                                        accept="application/pdf"
+                                        :multiple="true"
+                                        :maximum="2"
+                                        v-model="evidencias.archivos" 
+                                        >
+                                        <i class="fa fa-plus"></i>
+                                        Cargar Archivo
+                                        </file-upload>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                                </template>
                             </div>
                         </div>
                         <div class="wrapper-button">
@@ -335,115 +354,123 @@
                             </p>
                         </div>
                         <div class="row">
-                            <div class="col-xl-6 col-lg-6">
-                                
-<template>
-<div class="example-full">
-  <div class="upload">
-    <p class="info-contact-txt">Sube el curriculum de la persona nominada</p>
-    <div class="table-responsive">
-      <table class="table table-hover" v-if="formularioValues.semblanza.archivos.length > 0">
-        <thead>
-          <tr>
-            <th>Nombre</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="(file, index) in formularioValues.semblanza.archivos" :key="file.id">
-            <td>
-              <div class="filename">
-                {{file.name}}
-              </div>
-            </td>
-            <td>
-              <div class="btn-group">
-                <button class="btn btn-danger btn-sm" @click.prevent="quitarArchivo(formularioValues.semblanza.archivos, index)">
-                    <i class="fa fa-times"></i>
-                </button>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="example-foorer">
-      <div class="btn-group">
-        <file-upload 
-            input-id="semblanzaArchivo"
-          class="btn btn-primary dropdown-toggle"
-          :post-action="postAction"
-          :put-action="putAction"
-          extensions="pdf"
-          accept="application/pdf"
-          :multiple="false"
-          :maximum="formularioValues.semblanza.maximoArchivos"
-          v-model="formularioValues.semblanza.archivos"
-          ref="upload">
-          <i class="fa fa-plus"></i>
-          Cargar Archivo
-        </file-upload>
-      </div>
-    </div>
-  </div>
-</div>
-</template>
+                            <div class="col-xl-6 col-lg-6">                       
+                                <template>
+                                <div class="example-full">
+                                <div class="upload">
+                                    <p class="info-contact-txt">Sube el curriculum de la persona nominada</p>
+                                    <div class="table-responsive">
+                                    <table class="table table-hover" v-if="semblanza.archivos.length > 0">
+                                        <thead>
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr v-for="(file, index) in semblanza.archivos" :key="file.id">
+                                            <td>
+                                            <div class="filename">
+                                                {{file.name}}
+                                            </div>
+                                            </td>
+                                            <td>
+                                            <div class="btn-group">
+                                                <button class="btn btn-danger btn-sm" @click.prevent="quitarArchivo(semblanza.archivos, index)">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                    <div class="example-foorer">
+                                    <div class="btn-group">
+                                        <file-upload 
+                                            name="semblanzaArchivo"
+                                            input-id="semblanzaArchivo"
+                                        class="btn btn-primary"
+                                        post-action="api/p.php"
+                                        extensions="pdf"
+                                        accept="application/pdf"
+                                        :multiple="false"
+                                        v-model="semblanza.archivos"
+                                        :size="1024 * 1024 * 10"
+                                        >
+                                        <i class="fa fa-plus"></i>
+                                        Cargar Archivo
+                                        </file-upload>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                                </template>
                             </div>
                             <div class="col-xl-6 col-lg-6">
-<template>
-<div class="example-full">
-  <div class="upload">
-    <p class="info-contact-txt">Sube una foto o imagen del candidato</p>
-    <div class="table-responsive">
-      <table class="table table-hover" v-if="formularioValues.semblanza.imagenes.length > 0">
-        <thead>
-          <tr>
-            <th>Nombre</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="(file, index) in formularioValues.semblanza.imagenes" :key="file.id">
-            <td>
-              <div class="filename">
-                {{file.name}}
-              </div>
-            </td>
-            <td>
-              <div class="btn-group">
-                <button class="btn btn-danger btn-sm" @click.prevent="quitarArchivo(formularioValues.semblanza.imagenes, index)">
-                    <i class="fa fa-times"></i>
-                </button>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="example-foorer">
-      <div class="btn-group">
-        <file-upload
-            input-id="semblanzaImagen"
-          class="btn btn-primary dropdown-toggle"
-          :post-action="postAction"
-          :put-action="putAction"
-          extensions="jpg,png"
-          accept="image/jpeg,image/png"
-          :multiple="false"
-          :maximum="formularioValues.semblanza.maximoImagenes"
-          v-model="formularioValues.semblanza.imagenes"
-          ref="upload">
-          <i class="fa fa-plus"></i>
-          Cargar Archivo
-        </file-upload>
-      </div>
-    </div>
-  </div>
-</div>
-</template>
+                                <template>
+                                <div class="example-full">
+                                <div class="upload">
+                                    <p class="info-contact-txt">Sube una foto o imagen del candidato</p>
+                                    <div class="table-responsive">
+                                    <table class="table table-hover" v-if="semblanza.imagenes.length > 0">
+                                        <thead>
+                                        <tr>
+                                            <th>Nombre</th>
+                                            <th></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr v-for="(file, index) in semblanza.imagenes" :key="file.id">
+                                            <td>
+                                            <div class="filename">
+                                                {{file.name}}
+                                            </div>
+                                            </td>
+                                            <td>
+                                            <div class="btn-group">
+                                                <button class="btn btn-danger btn-sm" @click.prevent="quitarArchivo(semblanza.imagenes, index)">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                            </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                    <div class="example-foorer">
+                                    <div class="btn-group">
+                                        <file-upload
+                                            name="semblanzaImagen"
+                                            input-id="semblanzaImagen"
+                                        class="btn btn-primary"
+                                        :post-action="postAction"
+                                        :put-action="putAction"
+                                        extensions="jpg,png"
+                                        accept="image/jpeg,image/png"
+                                        :multiple="false"
+                                        v-model="semblanza.imagenes"
+                                        >
+                                        <i class="fa fa-plus"></i>
+                                        Cargar Archivo
+                                        </file-upload>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                                </template>
                             </div>
                         </div>
-                        <hr class="mt-5 mb-5 ">
+                        <hr class="mt-5" />
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 custom-columns">
+                                <div class="wrapper-input">
+                                    <label class="input-label" for="pagina-linkedin">P&aacute;gina LinkedIn del nominado</label>
+                                    <input type="url" v-model="formularioValues.paginaLinkedIn" class="input-custom" id="pagina-linkedin" name="pagina-linkedin">
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="mt-5 " />
                         <div class="row">
                             <div class="col-12 info-contact-content">
                                     <p class="info-contact-txt">
@@ -451,7 +478,6 @@
 	                                <p class="info-contact-txt">
                                         <strong>Tip</strong> Comparte ejemplos personales, esta es una 	manera memorable de hacer que tu candidato se destaque.</p></span>
                                     </p>
-
                                 <div class="wrapper-input">
                                 <label class="input-label" for="ejemplos">Razón de nominar</label>
                                     <textarea class="input-custom" name="ejemplos" placeholder="Escribir" v-model="formularioValues.razonNominacion"></textarea>
@@ -481,6 +507,11 @@
     </div>
 </div>
 <script src="https://unpkg.com/vue-upload-component"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+
+<script src="https://unpkg.com/vue-select@3.0.0"></script>
+<link rel="stylesheet" href="https://unpkg.com/vue-select@3.0.0/dist/vue-select.css">
+
 <script src="procesoformvue.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 <hr class="mt-5 mb-5">
