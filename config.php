@@ -10,18 +10,18 @@ if(!defined('prodURL')) {
 }
 
 if(!defined('MYSQL_SERVER')) {
-    define('MYSQL_SERVER', 'localhost');
+    define('MYSQL_SERVER', 'sql37.main-hosting.eu');
 }
 if(!defined('MYSQL_PORT')) {
     define('MYSQL_PORT', '3306');
 }
 if(!defined('DB')) {
-    define('DB', 'premiosdb');
+    define('DB', 'u122331602_tec');
 }
 if(!defined('MYSQL_USER')) {
-    define('MYSQL_USER', 'root');
+    define('MYSQL_USER', 'u122331602_tec');
 }
 if(!defined('MYSQL_PASS')) {
-    define('MYSQL_PASS', '');
+    define('MYSQL_PASS', 'Exatec2019');
 }
 ?>
