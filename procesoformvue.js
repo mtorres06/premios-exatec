@@ -349,7 +349,7 @@ var procesoForm = new Vue({
                         axios.post('api/nominacion.php',
                             formData).then(function () {
                                 swal("Enviando información", validado.message, "success");
-                                //location.href = "gracias.php";
+                                location.href = "gracias.php";
                             }).catch(function () {
                                 console.log('FAILURE!!');
                             });

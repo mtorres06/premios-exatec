@@ -26,25 +26,34 @@ USE `premiosdb` ;
 DROP TABLE IF EXISTS `premiosdb`.`registros` ;
 
 CREATE TABLE IF NOT EXISTS `premiosdb`.`registros` (
-  `Id` INT(11) NOT NULL AUTO_INCREMENT,
-  `checkbox-persona-moral` BIT(1) NULL DEFAULT NULL,
-  `checkbox-persona-fisica` BIT(1) NULL DEFAULT NULL,
-  `contacto-nombre` VARCHAR(500) NULL DEFAULT NULL,
-  `contacto-telefono` VARCHAR(500) NULL DEFAULT NULL,
-  `contacto-email` VARCHAR(500) NULL DEFAULT NULL,
-  `checkbox-postumo-si` BIT(1) NULL DEFAULT NULL,
-  `checkbox-postumo-no` BIT(1) NULL DEFAULT NULL,
-  `checkbox-merito-trayectoria` BIT(1) NULL DEFAULT NULL,
-  `checkbox-merito-exatec` BIT(1) NULL DEFAULT NULL,
-  `nominado-nombre` VARCHAR(500) NULL DEFAULT NULL,
-  `nominado-telefono` VARCHAR(500) NULL DEFAULT NULL,
-  `nominado-email` VARCHAR(500) NULL DEFAULT NULL,
-  `evidencias` VARCHAR(500) NULL DEFAULT NULL,
-  `cv` VARCHAR(500) NULL DEFAULT NULL,
-  `ejemplos` VARCHAR(500) NULL DEFAULT NULL,
-  PRIMARY KEY (`Id`))
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `personaMoral` bit(1) DEFAULT NULL,
+  `personaFisica` bit(1) DEFAULT NULL,
+  `exatecSi` bit(1) DEFAULT NULL,
+  `exatecNo` bit(1) DEFAULT NULL,
+  `exatecMatricula` varchar(20) DEFAULT NULL,
+  `nominacionAnonimaSi` bit(1) DEFAULT NULL,
+  `nominacionAnonimaNo` bit(1) DEFAULT NULL,
+  `contactoNombre` varchar(500) DEFAULT NULL,
+  `contactoTelefono` varchar(500) DEFAULT NULL,
+  `contactoEmail` varchar(500) DEFAULT NULL,
+  `nominacionPostumaSi` bit(1) DEFAULT NULL,
+  `nominacionPostumaNo` bit(1) DEFAULT NULL,
+  `trayectoriaExatec` bit(1) DEFAULT NULL,
+  `meritoExatec` bit(1) DEFAULT NULL,
+  `campus` int(11) DEFAULT NULL,
+  `nominadoNombre` varchar(500) DEFAULT NULL,
+  `nominadoTelefono` varchar(500) DEFAULT NULL,
+  `nominadoEmail` varchar(500) DEFAULT NULL,
+  `razonNominacion` longtext DEFAULT NULL,
+  `paginaLinkedIn` longtext DEFAULT NULL,
+  `evidencia01` varchar(50) DEFAULT NULL,
+  `evidencia02` varchar(50) DEFAULT NULL,
+  `nominadoCurriculum` varchar(50) DEFAULT NULL,
+  `nominadoFoto` varchar(50) DEFAULT NULL,
+  `fechaRegistro` date DEFAULT NULL,
+  PRIMARY KEY (`id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 6
 DEFAULT CHARACTER SET = latin1;
 
 
