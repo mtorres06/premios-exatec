@@ -304,24 +304,6 @@ var procesoForm = new Vue({
             }
             else {
                 var formData = new FormData();
-                /*
-                var archivos = [];
-                archivos = archivos.concat(
-                    evidencias.archivos,
-                    this.formularioValues.semblanza.archivos,
-                    this.formularioValues.semblanza.imagenes
-                );
-                for (var i = 0; i < archivos.length; i++) {
-                    let archivo = archivos[i];
-                    formData.append('Content-Type', archivo.type || 'application/octet-stream');
-                    formData.append('files[' + i + ']', JSON.stringify(archivo));
-                    formData.append('archivos[' + i + ']', archivo);
-                }
-                */
-                /*
-                 for (var i = 0; i < this.evidencias.archivos.length; i++) {
-                     formData.append('evidencias0' + (i + 1).toString(), this.evidencias.archivos[i].file);
-                 }*/
                 formData.append('evidencia01', this.evidencias.archivos[0].file);
                 if (this.evidencias.archivos.length > 1) {
                     formData.append('evidencia02', this.evidencias.archivos[1].file);
@@ -332,7 +314,6 @@ var procesoForm = new Vue({
                 var formularioValues = this.formularioValues;
 
                 axios.post('api/nominacion.php',
-                    //axios.post('api/p.php',
                     formData,
                     {
                         headers: {
@@ -341,7 +322,7 @@ var procesoForm = new Vue({
                     }
                 ).then(function (response) {
                     console.log('SUCCESS!!');
-                    if (response.data.camposEvidecias != undefined) {
+                    if (response.data.camposEvidencias != undefined) {
                         formData = new FormData();
                         formData.append("personaMoral", formularioValues.personaMoral);
                         formData.append("personaFisica", formularioValues.personaFisica);
@@ -374,27 +355,18 @@ var procesoForm = new Vue({
                                 if (responseRegistro.data.registrado != undefined){
                                     location.href = "gracias.php";
                                 } else {
-                                    swal("Nomina a un EXATEC", "Ocurrio un error, intentelo nuevamente mas tarde.", "danger");
+                                    swal("Nomina a un EXATEC", "Ocurrio un error, intentelo nuevamente mas tarde.", "error");
                                 } 
                             }).catch(function () {
                                 console.log('FAILURE!!');
                             });
                     } else {
-                        swal("Nomina a un EXATEC", "Ocurrio un error, intentelo nuevamente mas tarde.", "warning");
+                        swal("Nomina a un EXATEC", "Ocurrio un error, intentelo nuevamente mas tarde.", "error");
                     }
                 })
-                    .catch(function () {
-                        console.log('FAILURE!!');
-                    });
-                /*
-                if (!formulario) {
-                    //event.preventDefault();
-                }
-                else {
-                    console.log(formulario);
-                    $('#formulario').submit();
-                }
-                */
+                .catch(function () {
+                    console.log('FAILURE!!');
+                });
             }
         },
         Init: function () {
