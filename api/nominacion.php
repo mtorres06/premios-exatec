@@ -120,7 +120,8 @@
                 .",nominadoTelefono"
                 .",nominadoEmail"
                 .",razonNominacion"
-                .",paginaLinkedIn"
+                .",paginaLinkedIn",
+                .",fechaRegistro"
                 .$evidenciasNominacion["camposEvidencias"]
                 .$evidenciasNominacion["camposNominado"]
                 .")"
@@ -145,6 +146,7 @@
                 .",'".$datosNominacion["nominadoEmail"]."'"
                 .",'".$datosNominacion["razonNominacion"]."'"
                 .",'".$datosNominacion["paginaLinkedIn"]."'"
+                .",NOW()"
                 .$evidenciasNominacion["valoresEvidencias"]
                 .$evidenciasNominacion["valoresNominado"]
                 .");";
