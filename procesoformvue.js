@@ -1,8 +1,7 @@
 var procesoForm = new Vue({
     el: '#procesoForm',
     components: {
-        FileUpload: VueUploadComponent,
-        VSelect: VueSelect
+        FileUpload: VueUploadComponent
     },
     data: {
         showStep1: true,
@@ -48,7 +47,7 @@ var procesoForm = new Vue({
             { text: 'Chihuahua', value: '4' },
             { text: 'Cuernavaca', value: '5' },
             { text: 'EGADE', value: '6' },
-            { text: 'EGOB', value: '7' },
+            { text: 'EGobiernoyTP', value: '7' },
             { text: 'Guadalajara', value: '8' },
             { text: 'Hidalgo', value: '9' },
             { text: 'Irapuato', value: '10' },
@@ -342,19 +341,46 @@ var procesoForm = new Vue({
                     }
                 ).then(function (response) {
                     console.log('SUCCESS!!');
-                    if (response.data.camposEvidecias != "") {
+                    if (response.data.camposEvidecias != undefined) {
                         formData = new FormData();
-                        formData.append("datosNominacion", JSON.stringify(formularioValues));
-                        formData.append("evidenciasNominacion", JSON.stringify(response.data));
+                        formData.append("personaMoral", formularioValues.personaMoral);
+                        formData.append("personaFisica", formularioValues.personaFisica);
+                        formData.append("exatecSi", formularioValues.exatecSi);
+                        formData.append("exatecNo", formularioValues.exatecNo);
+                        formData.append("matricula", formularioValues.matricula);
+                        formData.append("nominacionAnonimaSi", formularioValues.nominacionAnonimaSi);
+                        formData.append("nominacionAnonimaNo", formularioValues.nominacionAnonimaNo);
+                        formData.append("contactoNombre", formularioValues.contactoNombre);
+                        formData.append("contactoCelular", formularioValues.contactoCelular);
+                        formData.append("contactoEmail", formularioValues.contactoEmail);
+                        formData.append("nominacionPostumaSi", formularioValues.nominacionPostumaSi);
+                        formData.append("nominacionPostumaNo", formularioValues.nominacionPostumaNo);
+                        formData.append("trayectoria", formularioValues.trayectoria);
+                        formData.append("merito", formularioValues.merito);
+                        formData.append("campusSeleccionado", formularioValues.campusSeleccionado);
+                        formData.append("nominadoNombre", formularioValues.nominadoNombre);
+                        formData.append("nominadoCelular", formularioValues.nominadoCelular);
+                        formData.append("nominadoEmail", formularioValues.nominadoEmail);
+                        formData.append("razonNominacion", formularioValues.razonNominacion);
+                        formData.append("paginaLinkedIn", formularioValues.paginaLinkedIn);
+                        
+                        formData.append("camposEvidencias", response.data.camposEvidencias);
+                        formData.append("valoresEvidencias", response.data.valoresEvidencias);
+                        formData.append("camposNominado", response.data.camposNominado);
+                        formData.append("valoresNominado", response.data.valoresNominado);
+                        
                         axios.post('api/nominacion.php',
-                            formData).then(function () {
-                                swal("Enviando información", validado.message, "success");
-                                location.href = "gracias.php";
+                            formData).then(function (responseRegistro) {
+                                if (responseRegistro.data.registrado != undefined){
+                                    location.href = "gracias.php";
+                                } else {
+                                    swal("Nomina a un EXATEC", "Ocurrio un error, intentelo nuevamente mas tarde.", "danger");
+                                } 
                             }).catch(function () {
                                 console.log('FAILURE!!');
                             });
                     } else {
-                        swal("Enviando información", "Ocurrio un error, intentelo nuevamente mas tarde.", "warning");
+                        swal("Nomina a un EXATEC", "Ocurrio un error, intentelo nuevamente mas tarde.", "warning");
                     }
                 })
                     .catch(function () {

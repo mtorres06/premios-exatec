@@ -1,5 +1,5 @@
 <?php
-    include('../config.php');
+	include('../config.php');
     
     if (isset($_FILES["evidencia01"])){
         $timeStamp = date("Ymd_His");
@@ -40,8 +40,6 @@
                     $errorCargaEvidencia = true;
                 }
             }
-        } else {
-            $errorCargaEvidencia = true;
         }
 
         $errorCargaNominadoCurriuculm = false;
@@ -59,7 +57,7 @@
                     $camposNominado .= ",nominadoCurriculum";
                     $valoresNominado .= ",'" . $nombreArchivo . "'";
                 } else {
-                    $errorCargaEvidencia = true;
+                    $errorCargaNominadoCurriuculm = true;
                 }
             }
         } else {
@@ -80,82 +78,82 @@
                 }
             }
         }
+			$r = array();
 
         if ((!$errorCargaEvidencia) && (!$errorCargaNominadoCurriuculm) && (!$errorCargaNominadoFoto)) {
-
             $r["camposEvidencias"] = $camposEvidencias;
             $r["camposNominado"] = $camposNominado;
             $r["valoresEvidencias"] = $valoresEvidencias;
             $r["valoresNominado"] = $valoresNominado;
-            echo json_encode($r);
+			header('Content-type: application/json');
+            echo '{ "camposEvidencias": "'.$camposEvidencias.'", "camposNominado": "'.$camposNominado.'", "valoresEvidencias": "'.$valoresEvidencias.'", "valoresNominado": "'.$valoresNominado.'" }';
         }
     }
 
-    if (isset($_POST["datosNominacion"])){
-        $datosNominacion = json_decode($_POST["datosNominacion"], true);
-        $evidenciasNominacion = json_decode($_POST["evidenciasNominacion"], true);
-        
+    if (isset($_POST["personaMoral"])){        
         $conn = new mysqli(MYSQL_SERVER, MYSQL_USER, MYSQL_PASS, DB, MYSQL_PORT);
-            if ($conn->connect_error) {
-                die("ERROR: Unable to connect: " . $conn->connect_error);
-            } 
+        if ($conn->connect_error) {
+            die("ERROR: Unable to connect: " . $conn->connect_error);
+        } 
 
-            $query = "INSERT INTO registros("
-                ."personaMoral"
-                .",personaFisica"
-                .",exatecSi"
-                .",exatecNo"
-                .",exatecMatricula"
-                .",nominacionAnonimaSi"
-                .",nominacionAnonimaNo"
-                .",contactoNombre"
-                .",contactoTelefono"
-                .",contactoEmail"
-                .",nominacionPostumaSi"
-                .",nominacionPostumaNo"
-                .",trayectoriaExatec"
-                .",meritoExatec"
-                .",campus"
-                .",nominadoNombre"
-                .",nominadoTelefono"
-                .",nominadoEmail"
-                .",razonNominacion"
-                .",paginaLinkedIn",
-                .",fechaRegistro"
-                .$evidenciasNominacion["camposEvidencias"]
-                .$evidenciasNominacion["camposNominado"]
-                .")"
-                ." VALUES("
-                .($datosNominacion["personaMoral"] == true ? $datosNominacion["personaMoral"] : '0')
-                .",".($datosNominacion["personaFisica"] == true ? $datosNominacion["personaFisica"] : '0')
-                .",".($datosNominacion["exatecSi"] == true ? $datosNominacion["exatecSi"] : '0')
-                .",".($datosNominacion["exatecNo"] == true ? $datosNominacion["exatecNo"] : '0')
-                .",'".$datosNominacion["matricula"]."'"
-                .",".($datosNominacion["nominacionAnonimaSi"] == true ? $datosNominacion["nominacionAnonimaSi"] : '0')
-                .",".($datosNominacion["nominacionAnonimaNo"] == true ? $datosNominacion["nominacionAnonimaNo"] : '0')
-                .",'".$datosNominacion["contactoNombre"]."'"
-                .",'".$datosNominacion["contactoCelular"]."'"
-                .",'".$datosNominacion["contactoEmail"]."'"
-                .",".($datosNominacion["nominacionPostumaSi"] == true ? $datosNominacion["nominacionPostumaSi"] : '0')
-                .",".($datosNominacion["nominacionPostumaNo"] == true ? $datosNominacion["nominacionPostumaNo"] : '0')
-                .",".($datosNominacion["trayectoria"] == true ? $datosNominacion["trayectoria"] : '0')
-                .",".($datosNominacion["merito"] == true ? $datosNominacion["merito"] : '0')
-                .",".$datosNominacion["campusSeleccionado"]
-                .",'".$datosNominacion["nominadoNombre"]."'"
-                .",'".$datosNominacion["nominadoCelular"]."'"
-                .",'".$datosNominacion["nominadoEmail"]."'"
-                .",'".$datosNominacion["razonNominacion"]."'"
-                .",'".$datosNominacion["paginaLinkedIn"]."'"
-                .",NOW()"
-                .$evidenciasNominacion["valoresEvidencias"]
-                .$evidenciasNominacion["valoresNominado"]
-                .");";
+        $query = "INSERT INTO registros("
+            ."personaMoral"
+            .",personaFisica"
+            .",exatecSi"
+            .",exatecNo"
+            .",exatecMatricula"
+            .",nominacionAnonimaSi"
+            .",nominacionAnonimaNo"
+            .",contactoNombre"
+            .",contactoTelefono"
+            .",contactoEmail"
+            .",nominacionPostumaSi"
+            .",nominacionPostumaNo"
+            .",trayectoriaExatec"
+            .",meritoExatec"
+            .",campus"
+            .",nominadoNombre"
+            .",nominadoTelefono"
+            .",nominadoEmail"
+            .",razonNominacion"
+            .",paginaLinkedIn"
+            .",fechaRegistro"
+            .$_POST["camposEvidencias"]
+            .$_POST["camposNominado"]
+            .")"
+            ." VALUES("
+            .($_POST["personaMoral"] == true ? $_POST["personaMoral"] : '0')
+            .",".($_POST["personaFisica"] == true ? $_POST["personaFisica"] : '0')
+            .",".($_POST["exatecSi"] == true ? $_POST["exatecSi"] : '0')
+            .",".($_POST["exatecNo"] == true ? $_POST["exatecNo"] : '0')
+            .",'".$_POST["matricula"]."'"
+            .",".($_POST["nominacionAnonimaSi"] == true ? $_POST["nominacionAnonimaSi"] : '0')
+            .",".($_POST["nominacionAnonimaNo"] == true ? $_POST["nominacionAnonimaNo"] : '0')
+            .",'".$_POST["contactoNombre"]."'"
+            .",'".$_POST["contactoCelular"]."'"
+            .",'".$_POST["contactoEmail"]."'"
+            .",".($_POST["nominacionPostumaSi"] == true ? $_POST["nominacionPostumaSi"] : '0')
+            .",".($_POST["nominacionPostumaNo"] == true ? $_POST["nominacionPostumaNo"] : '0')
+            .",".($_POST["trayectoria"] == true ? $_POST["trayectoria"] : '0')
+            .",".($_POST["merito"] == true ? $_POST["merito"] : '0')
+            .",".$_POST["campusSeleccionado"]
+            .",'".$_POST["nominadoNombre"]."'"
+            .",'".$_POST["nominadoCelular"]."'"
+            .",'".$_POST["nominadoEmail"]."'"
+            .",'".$_POST["razonNominacion"]."'"
+            .",'".$_POST["paginaLinkedIn"]."'"
+            .",NOW()"
+            .$_POST["valoresEvidencias"]
+            .$_POST["valoresNominado"]
+            .");";
 
-            if ($conn->query($query) === TRUE) {
-                $r["registrado"] = true;
-            } else {
-                $r["registrado"] = false;
-            }  
-            echo json_encode($r);
+        $r = array();
+        if ($conn->query($query) === TRUE) {
+            $r["registrado"] = true;
+        } else {
+            $r["registrado"] = false;
+        }  
+		header('Content-type: application/json');
+        echo '{ "registrado": '.$r["registrado"].' }';
     }
 ?>

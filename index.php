@@ -159,7 +159,7 @@
                             <div class="slider-element">Tampico</div>
                             <div class="slider-element">Laguna</div>
                             <div class="slider-element">Chihuahua</div>                            
-                            <div class="slider-element">EGOB</div>
+                            <div class="slider-element">EGobiernoyTP</div>
                             <div class="slider-element">EGADE</div>                      
                         </div>
                     </div>

@@ -508,10 +508,6 @@
 </div>
 <script src="https://unpkg.com/vue-upload-component"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
-
-<script src="https://unpkg.com/vue-select@3.0.0"></script>
-<link rel="stylesheet" href="https://unpkg.com/vue-select@3.0.0/dist/vue-select.css">
-
 <script src="procesoformvue.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 <hr class="mt-5 mb-5">
