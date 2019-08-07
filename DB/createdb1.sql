@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `premiosdb`.`registros` (
   `evidencia02` varchar(50) DEFAULT NULL,
   `nominadoCurriculum` varchar(50) DEFAULT NULL,
   `nominadoFoto` varchar(50) DEFAULT NULL,
-  `fechaRegistro` date DEFAULT NULL,
+  `fechaRegistro` datetime DEFAULT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = latin1;
